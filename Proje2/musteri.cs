@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    class musteri
+    class musteri : Kullanici
     {
+
     }
 }
