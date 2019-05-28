@@ -8,5 +8,25 @@ namespace Proje2
 {
     class admin : Kullanici
     {
+        void CreateOtel()
+        {
+
+        }
+
+        void DelUser()
+        {
+
+        }
+
+        void AddRoom()
+        {
+
+        }
+
+        void ShowReport()
+        {
+
+        }
+
     }
 }

@@ -8,5 +8,6 @@ namespace Proje2
 {
     class otel
     {
+
     }
 }

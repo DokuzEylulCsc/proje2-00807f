@@ -6,11 +6,7 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    abstract class Kullanici
+    class ButikOtel
     {
-        String username;
-        String Pass_hash;
-        String id;
-
     }
 }

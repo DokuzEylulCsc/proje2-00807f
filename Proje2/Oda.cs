@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    abstract class Kullanici
+    class Oda
     {
-        String username;
-        String Pass_hash;
-        String id;
-
+        int room_no;
+        bool reserved;
+        int bed_num;
+        string size;
+        bool seaside;
     }
 }

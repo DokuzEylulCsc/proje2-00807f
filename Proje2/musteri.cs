@@ -8,6 +8,28 @@ namespace Proje2
 {
     class musteri : Kullanici
     {
+        String tel_no;
+        String f_name;
+        String l_name;
+
+        public string Tel_no { get => tel_no; set => tel_no = value; }
+        public string F_name { get => f_name; set => f_name = value; }
+        public string L_name { get => l_name; set => l_name = value; }
+
+        void ReserveRoom()
+        {
+
+        }
+
+        void SearchOtel()
+        {
+
+        }
+
+        void ReserveDel()
+        {
+
+        }
 
     }
 }
