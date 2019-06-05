@@ -8,5 +8,6 @@ namespace Proje2
 {
     class TatilKoyu
     {
+        string type = "TatilKoyu";
     }
 }

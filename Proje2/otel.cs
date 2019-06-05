@@ -8,6 +8,7 @@ namespace Proje2
 {
     class otel
     {
-
+        List<Oda> odalist;
+        List<Reservation> reservelist;
     }
 }

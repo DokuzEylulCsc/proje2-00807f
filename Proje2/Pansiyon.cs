@@ -8,5 +8,6 @@ namespace Proje2
 {
     class Pansiyon
     {
+        string type = "Pansiyon";
     }
 }

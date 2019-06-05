@@ -18,7 +18,7 @@ namespace Proje2
 
         }
 
-        void AddRoom()
+        void AddRoom(otel otelname)
         {
 
         }
