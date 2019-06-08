@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    class ButikOtel
+    abstract class otelfactory
     {
-         string type = "ButikOtel";
+        public abstract otel GetOtel();
     }
 }

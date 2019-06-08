@@ -16,14 +16,14 @@ namespace Proje2
         public string F_name { get => f_name; set => f_name = value; }
         public string L_name { get => l_name; set => l_name = value; }
 
-        void ReserveRoom()
+        void ReserveRoom(otel otel,DateTime date,Oda oda)
         {
-
+            otel.Reservelist.Add(new Reservation(otel,date,oda,this));
         }
 
         void SearchOtel()
         {
-
+           
         }
 
         void ReserveDel()
