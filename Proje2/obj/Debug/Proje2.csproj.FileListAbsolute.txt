@@ -1,0 +1,10 @@
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.csprojAssemblyReference.cache
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.Properties.Resources.resources
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.GenerateResource.cache
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.CoreCompileInputs.cache
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.Form1.resources
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\bin\Debug\Proje2.exe.config
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\bin\Debug\Proje2.exe
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\bin\Debug\Proje2.pdb
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.exe
+C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.pdb

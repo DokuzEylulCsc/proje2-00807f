@@ -32,6 +32,11 @@ namespace Proje2
 
         }
 
+        public Reservation(otel otel, DateTime date, Oda oda, musteri musteri)
+        {
+            this.date = date;
+        }
+
         void ShowReserv()
         {
 
