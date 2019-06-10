@@ -9,5 +9,10 @@ namespace Proje2
     class ButikOtel
     {
          string type = "ButikOtel";
+
+        ButikOtel()
+        {
+
+        }
     }
 }

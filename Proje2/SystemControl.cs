@@ -13,5 +13,6 @@ namespace Proje2
 
         internal List<Kullanici> Userlist { get => userlist; set => userlist = value; }
         internal List<otel> Otellist { get => otellist; set => otellist = value; }
+
     }
 }
