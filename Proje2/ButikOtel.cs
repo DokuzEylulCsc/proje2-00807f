@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    class ButikOtel
+    class ButikOtel : otel
     {
          string type = "ButikOtel";
 
-        ButikOtel()
+        public ButikOtel()
         {
 
         }

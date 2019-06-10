@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    class TatilKoyu
+    class TatilKoyu : otel
     {
         string type = "TatilKoyu";
 
 
-        TatilKoyu ()
+        public TatilKoyu()
         {
 
         }
