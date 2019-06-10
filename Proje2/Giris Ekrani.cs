@@ -26,6 +26,7 @@ namespace Proje2
         {
             Form ChildForm = new Form();
             ChildForm.Show();
+            ChildForm.MdiParent = this;
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
