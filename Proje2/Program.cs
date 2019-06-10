@@ -14,6 +14,15 @@ namespace Proje2
         [STAThread]
         static void Main()
         {
+            ///test boyz   
+            SystemControl.Otellist.Add(new ButikOtel());
+            SystemControl.Otellist.Add(new Pansiyon());
+            SystemControl.Otellist.Add(new TatilKoyu());
+            SystemControl.Userlist.Add(new musteri());
+            //FileOp.filewrite();
+
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());

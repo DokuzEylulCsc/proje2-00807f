@@ -12,7 +12,7 @@ namespace Proje2
 
         public ButikOtel()
         {
-
+            this.type = "testc";
         }
     }
 }
