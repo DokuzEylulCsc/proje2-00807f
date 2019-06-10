@@ -18,3 +18,10 @@ C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.Gener
 C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.CoreCompileInputs.cache
 C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.exe
 C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.pdb
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.csprojAssemblyReference.cache
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.Form1.resources
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.Properties.Resources.resources
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.GenerateResource.cache
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.CoreCompileInputs.cache
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.exe
+C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.pdb

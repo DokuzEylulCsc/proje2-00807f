@@ -24,7 +24,8 @@ namespace Proje2
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            Form ChildForm = new Form();
+            ChildForm.Show();
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
