@@ -8,3 +8,13 @@ C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\bin\Debug\Proje2.
 C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\bin\Debug\Proje2.pdb
 C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.exe
 C:\Users\DOGUS\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.pdb
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\bin\Debug\Proje2.exe.config
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\bin\Debug\Proje2.exe
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\bin\Debug\Proje2.pdb
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.csprojAssemblyReference.cache
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.Form1.resources
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.Properties.Resources.resources
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.GenerateResource.cache
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.csproj.CoreCompileInputs.cache
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.exe
+C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.pdb
