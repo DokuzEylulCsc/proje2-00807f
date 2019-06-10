@@ -10,7 +10,7 @@ namespace Proje2
     {
         public override otel GetOtel()
         {
-            return TatilKoyu();
+            return new TatilKoyu();
         }
     }
 }

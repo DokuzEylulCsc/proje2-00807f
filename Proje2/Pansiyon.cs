@@ -6,8 +6,14 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    class Pansiyon
+    class Pansiyon : otel
     {
         string type = "Pansiyon";
+
+
+        public Pansiyon()
+        {
+
+        }
     }
 }

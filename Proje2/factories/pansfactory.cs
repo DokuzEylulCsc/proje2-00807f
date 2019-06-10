@@ -10,7 +10,7 @@ namespace Proje2
     {
         public override otel GetOtel()
         {
-            return Pansiyon();
+            return new Pansiyon();
         }
     }
 }
