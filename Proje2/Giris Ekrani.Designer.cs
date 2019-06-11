@@ -41,11 +41,12 @@
             this.txtad = new System.Windows.Forms.TextBox();
             this.txtsoyad = new System.Windows.Forms.TextBox();
             this.txttel = new System.Windows.Forms.TextBox();
-            this.txtyas = new System.Windows.Forms.TextBox();
+            this.txtkadı = new System.Windows.Forms.TextBox();
             this.txtparola = new System.Windows.Forms.TextBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -199,18 +200,18 @@
             this.txttel.TextChanged += new System.EventHandler(this.Txttel_TextChanged);
             this.txttel.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox5_KeyPress);
             // 
-            // txtyas
+            // txtkadı
             // 
-            this.txtyas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtyas.Location = new System.Drawing.Point(624, 264);
-            this.txtyas.Name = "txtyas";
-            this.txtyas.Size = new System.Drawing.Size(85, 22);
-            this.txtyas.TabIndex = 7;
-            this.txtyas.Text = "Yaşınız";
-            this.txtyas.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtyas.Click += new System.EventHandler(this.Txtyas_Click);
-            this.txtyas.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
-            this.txtyas.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox6_KeyPress);
+            this.txtkadı.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtkadı.Location = new System.Drawing.Point(624, 264);
+            this.txtkadı.Name = "txtkadı";
+            this.txtkadı.Size = new System.Drawing.Size(85, 22);
+            this.txtkadı.TabIndex = 7;
+            this.txtkadı.Text = "Kullanıcı Adı";
+            this.txtkadı.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtkadı.Click += new System.EventHandler(this.Txtyas_Click);
+            this.txtkadı.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
+            this.txtkadı.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox6_KeyPress);
             // 
             // txtparola
             // 
@@ -223,7 +224,6 @@
             this.txtparola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtparola.Click += new System.EventHandler(this.Txtparola_Click);
             this.txtparola.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
-            this.txtparola.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBox3_KeyPress);
             // 
             // pictureBox2
             // 
@@ -255,6 +255,16 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(737, 65);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 11;
+            this.button3.Text = "Admin buton";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            // 
             // frmgiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -263,10 +273,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(923, 512);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtsoyad);
             this.Controls.Add(this.txttel);
-            this.Controls.Add(this.txtyas);
+            this.Controls.Add(this.txtkadı);
             this.Controls.Add(this.txtparola);
             this.Controls.Add(this.txtad);
             this.Controls.Add(this.pictureBox2);
@@ -311,10 +322,11 @@
         private System.Windows.Forms.TextBox txtad;
         private System.Windows.Forms.TextBox txtsoyad;
         private System.Windows.Forms.TextBox txttel;
-        private System.Windows.Forms.TextBox txtyas;
+        private System.Windows.Forms.TextBox txtkadı;
         private System.Windows.Forms.TextBox txtparola;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 

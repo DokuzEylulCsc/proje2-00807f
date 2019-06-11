@@ -164,5 +164,15 @@ namespace Proje2
         {
 
         }
+
+        private void Label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label8_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

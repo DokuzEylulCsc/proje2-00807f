@@ -30,3 +30,4 @@ C:\Users\earthm\Source\Repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2
 C:\Users\earthm\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.frmkullanici.resources
 C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.frmgiris.resources
 C:\Users\IEUser\Desktop\nesne\proje2-00807f\Proje2\obj\Debug\Proje2.frmkullanici.resources
+C:\Users\earthm\source\repos\DokuzEylulCsc\proje2-00807f\Proje2\obj\Debug\Proje2.frmadmin.resources
