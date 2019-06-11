@@ -46,7 +46,6 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -80,6 +79,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 2;
+            this.textBox1.UseSystemPasswordChar = true;
             // 
             // textBox2
             // 
@@ -111,7 +111,6 @@
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 4;
             this.label6.Text = "Parola";
-            this.label6.Click += new System.EventHandler(this.Label6_Click);
             // 
             // label7
             // 
@@ -124,7 +123,6 @@
             this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 4;
             this.label7.Text = "Kullanıcı ID";
-            this.label7.Click += new System.EventHandler(this.Label7_Click);
             // 
             // label2
             // 
@@ -160,7 +158,6 @@
             this.label10.Size = new System.Drawing.Size(270, 34);
             this.label10.TabIndex = 4;
             this.label10.Text = "ÜYELİK OLUŞTUR";
-            this.label10.Click += new System.EventHandler(this.Label10_Click);
             // 
             // txtad
             // 
@@ -222,6 +219,7 @@
             this.txtparola.TabIndex = 7;
             this.txtparola.Text = "Parolanız";
             this.txtparola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtparola.UseSystemPasswordChar = true;
             this.txtparola.Click += new System.EventHandler(this.Txtparola_Click);
             this.txtparola.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
@@ -255,16 +253,6 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(737, 65);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Admin buton";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
-            // 
             // frmgiris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -273,7 +261,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(923, 512);
             this.ControlBox = false;
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtsoyad);
             this.Controls.Add(this.txttel);
@@ -326,7 +313,6 @@
         private System.Windows.Forms.TextBox txtparola;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
     }
 }
 

@@ -59,12 +59,15 @@ namespace Proje2
             //Console.WriteLine(otels.ToString());
         }
 
-        void fileread()
+        static public void fileread()
         {
             string xml = File.ReadAllText("write.xml");
             XDocument doc = XDocument.Parse(xml);
 
+            Console.WriteLine(doc.Element("data").Element("Users").Element("admins"));
 
+
+    
         }
 
     }

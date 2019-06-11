@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace Proje2
 {
@@ -27,18 +28,53 @@ namespace Proje2
         frmkullanici fr1;
         public void Button1_Click(object sender, EventArgs e) //giris butonu datada sorgu yapılarak girişe izin verilecek
         {
-            if (fr1 == null)
+
+            if (SystemControl.Userlist.Find(x => x.Username == textBox2.Text) != null)
             {
-                fr1 = new frmkullanici();
-                fr1.Show();
-                this.Hide();
+                Kullanici founduser = SystemControl.Userlist.Find(x => x.Username == textBox2.Text);
+
+                using (SHA512 shaM = new SHA512Managed())
+                {
+                    if(BitConverter.ToString(shaM.ComputeHash(Encoding.UTF8.GetBytes(textBox1.Text))).Replace("-", "") == founduser.Pass_hash)
+                    {
+                        Console.WriteLine(founduser.GetType().ToString());
+                        if(founduser.GetType().ToString() == "Proje2.admin")
+                        {
+                            if (fr3 == null)
+                            {
+                                fr3 = new frmadmin();
+                                fr3.Show();
+                                this.Hide();
+                            }
+                        }
+                        else
+                        {
+                            if (fr1 == null)
+                            {
+                                fr1 = new frmkullanici();
+                                fr1.Show();
+                                this.Hide();
+                            }
+                        }
+                    }
+                    else
+                    {
+                        //parola yalnıs hata
+                    }                    
+                }          
             }
+            else
+            {
+                //kullanıcı yok hata
+            }
+
+
 
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
         {
-            Console.WriteLine("dfsdf");
+           
         }
 
         private void TextBox6_KeyPress(object sender, KeyPressEventArgs e)
@@ -49,10 +85,6 @@ namespace Proje2
 
         }
 
-        private void Label10_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void TextBox5_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -100,9 +132,19 @@ namespace Proje2
         private void Btnuyelik_Click(object sender, EventArgs e)
         {
             //hata yakalama
-            if (txtad.Text == "" || txtparola.Text == "" || txtkadı.Text == "" || txttel.Text == ""|| txtad.Text == "Adınız" || txtparola.Text == "Parolanız" || txtkadı.Text == "Yaşınız" || txttel.Text == "Telefon Numaranız" || txtsoyad.Text==""|| txtsoyad.Text == "Soyadınız") MessageBox.Show("Lütfen tüm alanları eksiksiz doldurun"); 
+            if (txtad.Text == "" || txtparola.Text == "" || txtkadı.Text == "" || txttel.Text == ""|| txtad.Text == "Adınız" || txtparola.Text == "Parolanız" || txtkadı.Text == "Kullanıcı Adı" || txttel.Text == "Telefon Numaranız" || txtsoyad.Text==""|| txtsoyad.Text == "Soyadınız") MessageBox.Show("Lütfen tüm alanları eksiksiz doldurun"); 
             else
             {
+                if (SystemControl.Userlist.Find(x => x.Username == txtkadı.Text) != null)
+                {
+                    SystemControl.Userlist.Add(new musteri(txtkadı.Text, txttel.Text, txtkadı.Text, txtsoyad.Text, txtparola.Text));
+                }
+
+                else
+                {
+                    //ayni username var
+                }
+                    
                 //kayıt oluşturma işlemleri
             }
         }
@@ -110,34 +152,16 @@ namespace Proje2
         private void Txtparola_Click(object sender, EventArgs e)
         {
             if (txtparola.Text == "Parolanız") txtparola.Text = ""; //placeholder clear
-            if (txtparola.Text != "Parolanız") txtparola.PasswordChar = '*'; //parola gizleme
+            //if (txtparola.Text != "Parolanız") txtparola.PasswordChar = '*'; //parola gizleme
         }
 
-        private void Label7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button2_Click(object sender, EventArgs e)
         {
+            FileOp.filewrite();
             Application.Exit();
         }
         frmadmin fr3;
-        private void Button3_Click(object sender, EventArgs e)
-        {
-
-            if (fr3 == null)
-            {
-                fr3 = new frmadmin();
-                fr3.Show();
-                this.Hide();
-            }
-
-        }
+ 
     }
 }

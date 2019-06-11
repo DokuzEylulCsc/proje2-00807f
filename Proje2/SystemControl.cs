@@ -11,6 +11,7 @@ namespace Proje2
         static List<Kullanici> userlist = new List<Kullanici>();
         static List<otel> otellist = new List<otel>();
 
+
         static public List<otel> Otellist { get => otellist; set => otellist = value; }
         static public List<Kullanici> Userlist { get => userlist; set => userlist = value; }
         

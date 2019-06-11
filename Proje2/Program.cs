@@ -26,6 +26,7 @@ namespace Proje2
             SystemControl.Userlist.Add(new musteri("aykirimahmut42","12313131","mahmut","mahmutoglu","hunter2"));
             SystemControl.Userlist.Add(new musteri("CcCg£zgInBoyCcC", "31312312", "Ahmet", "patatesson", "password"));
             FileOp.filewrite();
+            FileOp.fileread();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

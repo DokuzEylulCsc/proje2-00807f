@@ -12,6 +12,10 @@ namespace Proje2
     {
         public frmkullanici()
         {
+          /*  txtad.Text = SystemControl.currentuser.F_name;
+            txtsoyad.Text = SystemControl.currentuser.L_name;
+            txttel.Text = SystemControl.currentuser.Tel_no;
+            txtkadı.Text = SystemControl.currentuser.Username;*/
             InitializeComponent();
         }
 
@@ -28,6 +32,7 @@ namespace Proje2
 
         public void Button1_Click(object sender, EventArgs e)
         {
+            FileOp.filewrite();
             this.Close();
             Application.Exit();
         }
@@ -171,6 +176,16 @@ namespace Proje2
         }
 
         private void Label8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnrezervasyon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnguncelle_Click(object sender, EventArgs e)
         {
 
         }
