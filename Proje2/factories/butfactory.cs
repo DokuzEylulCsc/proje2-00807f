@@ -8,9 +8,13 @@ namespace Proje2
 {
     class butfactory : otelfactory
     {
-        public override otel GetOtel()
+        public override otel GetOtel(String sehir, string isim , int yildiz)
         {
-            return new ButikOtel();
+            ButikOtel tmpotel = new ButikOtel(sehir,isim, yildiz);//her butik otelde minimum klimali 2 medium oda olmali
+            tmpotel.Odalist.Add(new Oda(101, 2, "medium", false, false, true));
+            tmpotel.Odalist.Add(new Oda(102, 2, "medium", false, false, true));
+
+            return tmpotel;
         }
     }
 }

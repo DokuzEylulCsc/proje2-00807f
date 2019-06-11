@@ -18,7 +18,7 @@ namespace Proje2
         static public List<admin> getadminlist()
         {
             List<admin> templist = new List<admin>();
-            foreach (admin i in userlist)
+            foreach (admin i in userlist.OfType<admin>())
             {
                 templist.Add(i);
             }
@@ -28,7 +28,7 @@ namespace Proje2
         static public List<musteri> getcustlist()
         {
             List<musteri> templist = new List<musteri>();
-            foreach (musteri i in userlist)
+            foreach (musteri i in userlist.OfType<musteri>())
             {
                 templist.Add(i);
             }

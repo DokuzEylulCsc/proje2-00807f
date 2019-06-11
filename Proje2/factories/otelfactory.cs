@@ -8,6 +8,6 @@ namespace Proje2
 {
     abstract class otelfactory
     {
-        public abstract otel GetOtel();
+        public abstract otel GetOtel(String sehir, string isim, int star);
     }
 }

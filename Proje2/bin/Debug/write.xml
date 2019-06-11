@@ -1,0 +1,102 @@
+<Users>
+  <admins>
+    <Admin>
+      <username />
+      <passhash />
+      <id />
+    </Admin>
+  </admins>
+  <customers>
+    <musteri>
+      <username />
+      <passhash />
+      <id />
+      <tel />
+      <fname />
+      <lname />
+    </musteri>
+  </customers>
+</Users>
+<otels>
+  <otel>
+    <type>TatilKoyu</type>
+    <star>2</star>
+    <city>izmir</city>
+    <name>testotel</name>
+    <rooms>
+      <oda>
+        <roomno>101</roomno>
+        <Reserved>false</Reserved>
+        <Bednum>2</Bednum>
+        <Size>medium</Size>
+        <seaside>false</seaside>
+        <minibar>true</minibar>
+        <AC>false</AC>
+      </oda>
+      <oda>
+        <roomno>102</roomno>
+        <Reserved>false</Reserved>
+        <Bednum>2</Bednum>
+        <Size>medium</Size>
+        <seaside>false</seaside>
+        <minibar>true</minibar>
+        <AC>false</AC>
+      </oda>
+    </rooms>
+    <reservations />
+  </otel>
+  <otel>
+    <type>ButikOtel</type>
+    <star>1</star>
+    <city>sivas</city>
+    <name>patates</name>
+    <rooms>
+      <oda>
+        <roomno>101</roomno>
+        <Reserved>false</Reserved>
+        <Bednum>2</Bednum>
+        <Size>medium</Size>
+        <seaside>false</seaside>
+        <minibar>false</minibar>
+        <AC>true</AC>
+      </oda>
+      <oda>
+        <roomno>102</roomno>
+        <Reserved>false</Reserved>
+        <Bednum>2</Bednum>
+        <Size>medium</Size>
+        <seaside>false</seaside>
+        <minibar>false</minibar>
+        <AC>true</AC>
+      </oda>
+    </rooms>
+    <reservations />
+  </otel>
+  <otel>
+    <type>TatilKoyu</type>
+    <star>4</star>
+    <city>ankara</city>
+    <name>testkoy</name>
+    <rooms>
+      <oda>
+        <roomno>101</roomno>
+        <Reserved>false</Reserved>
+        <Bednum>2</Bednum>
+        <Size>medium</Size>
+        <seaside>true</seaside>
+        <minibar>false</minibar>
+        <AC>false</AC>
+      </oda>
+      <oda>
+        <roomno>102</roomno>
+        <Reserved>false</Reserved>
+        <Bednum>2</Bednum>
+        <Size>medium</Size>
+        <seaside>true</seaside>
+        <minibar>false</minibar>
+        <AC>false</AC>
+      </oda>
+    </rooms>
+    <reservations />
+  </otel>
+</otels>

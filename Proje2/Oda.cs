@@ -24,6 +24,19 @@ namespace Proje2
         public bool Minibar { get => minibar; set => minibar = value; }
         public bool Ac { get => ac; set => ac = value; }
 
+        public Oda(int rno,int bno,string size, bool sea, bool bar,bool ac)
+        {
+            this.reserved = false;
+            this.room_no = rno;
+            this.bed_num = bno;
+            this.size = size;
+            this.seaside = sea;
+            this.minibar = bar;
+            this.ac = ac;
+        }
+
+
+
         void getinfo()
         {
 

@@ -20,7 +20,7 @@ namespace Proje2
 
         void AddRoom(otel otelname)
         {
-            otelname.Odalist.Add(new Oda());
+            //otelname.Odalist.Add(new Oda());
         }
 
         void ShowReport()
