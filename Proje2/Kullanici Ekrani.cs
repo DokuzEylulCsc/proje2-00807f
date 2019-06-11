@@ -23,13 +23,146 @@ namespace Proje2
 
         private void Button2_Click(object sender, EventArgs e)
         {
-
+           
         }
 
         public void Button1_Click(object sender, EventArgs e)
         {
             this.Close();
             Application.Exit();
+        }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+          
+            lblotelbulundu.Show();
+            chclstbxoteller.Show();
+            lbluyari.Show();
+            lblotelgorunecek.Hide();
+            lblcikis.Show();
+            datepicgiris.Show();
+            datepickcikis.Show();
+            btnrezervasyon.Show();
+            lblgirst.Show();
+          
+        }
+
+        private void Lblotelbulundu_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void Lstbxoteller_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            lblotelbulundu.Hide();
+            chclstbxoteller.Hide();
+            lbluyari.Hide();
+            lblotelgorunecek.Show();
+         
+           
+        }
+
+        private void Lblcikis_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lblotelgorunecek_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txtsehir_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clstbxoteltur_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clsbxodatur_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Clbxekstralar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cmbbxyatakcount_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cmbbxodagenislik_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Chclstbxoteller_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Lbluyari_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void Datepicgiris_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Datepickcikis_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void TabPage1_Click(object sender, EventArgs e)
+        {
+            tabPage1.Text = @"Rezervasyon Yap";
+        }
+
+        private void TabPage2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

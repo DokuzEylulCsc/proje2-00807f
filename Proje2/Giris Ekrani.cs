@@ -117,5 +117,15 @@ namespace Proje2
         {
 
         }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
