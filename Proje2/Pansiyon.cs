@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 namespace Proje2
 {
     class Pansiyon : otel
-    {
-        string type = "Pansiyon";
-
-
-        public Pansiyon()
+    {        
+        public Pansiyon(String city, string name, int star)
         {
-
+            this.Type = "Pansiyon";
+            this.Otelname = name;
+            this.City = city;
+            this.Star = star;
         }
     }
 }

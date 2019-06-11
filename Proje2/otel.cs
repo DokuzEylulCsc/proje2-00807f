@@ -8,8 +8,8 @@ namespace Proje2
 {
     abstract class otel
     {
-        List<Oda> odalist;
-        List<Reservation> reservelist;
+        List<Oda> odalist = new List<Oda>();
+        List<Reservation> reservelist = new List<Reservation>();
         int star;
         String city;
         string type;
@@ -21,5 +21,9 @@ namespace Proje2
         public string City { get => city; set => city = value; }
         public int Star { get => star; set => star = value; }
         public string Otelname { get => otelname; set => otelname = value; }
+
+
+
+
     }
 }
