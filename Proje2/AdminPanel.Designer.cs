@@ -71,11 +71,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Butik = new System.Windows.Forms.RadioButton();
+            this.koy = new System.Windows.Forms.RadioButton();
+            this.pansiyon = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pansiyon = new System.Windows.Forms.RadioButton();
-            this.koy = new System.Windows.Forms.RadioButton();
-            this.Butik = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -525,7 +525,7 @@
             // 
             this.groupBox1.Location = new System.Drawing.Point(264, 6);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(466, 255);
+            this.groupBox1.Size = new System.Drawing.Size(466, 401);
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Oda Ekleme";
@@ -542,6 +542,39 @@
             this.groupBox2.TabIndex = 26;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Otel Ekleme";
+            // 
+            // Butik
+            // 
+            this.Butik.AutoSize = true;
+            this.Butik.Location = new System.Drawing.Point(42, 133);
+            this.Butik.Name = "Butik";
+            this.Butik.Size = new System.Drawing.Size(71, 17);
+            this.Butik.TabIndex = 5;
+            this.Butik.TabStop = true;
+            this.Butik.Text = "Butik Otel";
+            this.Butik.UseVisualStyleBackColor = true;
+            // 
+            // koy
+            // 
+            this.koy.AutoSize = true;
+            this.koy.Location = new System.Drawing.Point(42, 179);
+            this.koy.Name = "koy";
+            this.koy.Size = new System.Drawing.Size(71, 17);
+            this.koy.TabIndex = 4;
+            this.koy.TabStop = true;
+            this.koy.Text = "Tatil koyu";
+            this.koy.UseVisualStyleBackColor = true;
+            // 
+            // pansiyon
+            // 
+            this.pansiyon.AutoSize = true;
+            this.pansiyon.Location = new System.Drawing.Point(42, 156);
+            this.pansiyon.Name = "pansiyon";
+            this.pansiyon.Size = new System.Drawing.Size(68, 17);
+            this.pansiyon.TabIndex = 3;
+            this.pansiyon.TabStop = true;
+            this.pansiyon.Text = "Pansiyon";
+            this.pansiyon.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -561,39 +594,6 @@
             this.groupBox3.TabIndex = 27;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Kullanıcı İşlem";
-            // 
-            // pansiyon
-            // 
-            this.pansiyon.AutoSize = true;
-            this.pansiyon.Location = new System.Drawing.Point(42, 156);
-            this.pansiyon.Name = "pansiyon";
-            this.pansiyon.Size = new System.Drawing.Size(68, 17);
-            this.pansiyon.TabIndex = 3;
-            this.pansiyon.TabStop = true;
-            this.pansiyon.Text = "Pansiyon";
-            this.pansiyon.UseVisualStyleBackColor = true;
-            // 
-            // koy
-            // 
-            this.koy.AutoSize = true;
-            this.koy.Location = new System.Drawing.Point(42, 179);
-            this.koy.Name = "koy";
-            this.koy.Size = new System.Drawing.Size(71, 17);
-            this.koy.TabIndex = 4;
-            this.koy.TabStop = true;
-            this.koy.Text = "Tatil koyu";
-            this.koy.UseVisualStyleBackColor = true;
-            // 
-            // Butik
-            // 
-            this.Butik.AutoSize = true;
-            this.Butik.Location = new System.Drawing.Point(42, 133);
-            this.Butik.Name = "Butik";
-            this.Butik.Size = new System.Drawing.Size(71, 17);
-            this.Butik.TabIndex = 5;
-            this.Butik.TabStop = true;
-            this.Butik.Text = "Butik Otel";
-            this.Butik.UseVisualStyleBackColor = true;
             // 
             // frmadmin
             // 

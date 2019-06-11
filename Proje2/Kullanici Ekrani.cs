@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Security.Cryptography;
 
 namespace Proje2
 {
@@ -12,11 +13,12 @@ namespace Proje2
     {
         public frmkullanici()
         {
-          /*  txtad.Text = SystemControl.currentuser.F_name;
-            txtsoyad.Text = SystemControl.currentuser.L_name;
-            txttel.Text = SystemControl.currentuser.Tel_no;
-            txtkadı.Text = SystemControl.currentuser.Username;*/
+
             InitializeComponent();
+            txtad.Text = SystemControl.currentmusteri.F_name;
+            txtsoyad.Text = SystemControl.currentmusteri.L_name;
+            txttel.Text = SystemControl.currentmusteri.Tel_no;
+            txtkadı.Text = SystemControl.currentmusteri.Username;
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -187,6 +189,18 @@ namespace Proje2
 
         private void btnguncelle_Click(object sender, EventArgs e)
         {
+            SystemControl.currentmusteri.F_name = txtad.Text;
+            SystemControl.currentmusteri.L_name = txtsoyad.Text;
+            SystemControl.currentmusteri.Tel_no = txttel.Text;
+            SystemControl.currentmusteri.Username = txtkadı.Text;
+
+            using (SHA512 shaM = new SHA512Managed())
+            {
+                SystemControl.currentmusteri.Pass_hash = BitConverter.ToString(shaM.ComputeHash(Encoding.UTF8.GetBytes(txtparola.Text))).Replace("-", "");
+            }
+
+           /* SystemControl.Userlist.Find(x => x.Id == SystemControl.currentmusteri.Id) = SystemControl.currentmusteri;
+            SystemControl.Userlist.*/
 
         }
     }

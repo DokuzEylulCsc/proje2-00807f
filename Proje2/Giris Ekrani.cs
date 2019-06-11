@@ -53,6 +53,8 @@ namespace Proje2
                         {
                             if (fr1 == null)
                             {
+                                SystemControl.currentmusteri = SystemControl.getcustlist().Find(x => x.Id == founduser.Id);
+
                                 fr1 = new frmkullanici();
                                 fr1.Show();
                                 this.Hide();
