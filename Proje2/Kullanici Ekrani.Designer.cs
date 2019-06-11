@@ -54,9 +54,28 @@
             this.lblgirst = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtsoyad = new System.Windows.Forms.TextBox();
+            this.txttel = new System.Windows.Forms.TextBox();
+            this.txtkadı = new System.Windows.Forms.TextBox();
+            this.txtparola = new System.Windows.Forms.TextBox();
+            this.txtad = new System.Windows.Forms.TextBox();
+            this.btnguncelle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // label2
@@ -112,10 +131,9 @@
             this.clstbxoteltur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.clstbxoteltur.FormattingEnabled = true;
             this.clstbxoteltur.Items.AddRange(new object[] {
-            "Otel",
+            "Tatil Köyü",
             "Butik Otel",
-            "Pansiyon",
-            "Tatil Köyü"});
+            "Pansiyon"});
             this.clstbxoteltur.Location = new System.Drawing.Point(285, 71);
             this.clstbxoteltur.Name = "clstbxoteltur";
             this.clstbxoteltur.Size = new System.Drawing.Size(105, 76);
@@ -200,7 +218,7 @@
             this.lblotelbulundu.BackColor = System.Drawing.Color.Transparent;
             this.lblotelbulundu.Font = new System.Drawing.Font("Microsoft YaHei", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblotelbulundu.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblotelbulundu.Location = new System.Drawing.Point(307, 176);
+            this.lblotelbulundu.Location = new System.Drawing.Point(285, 176);
             this.lblotelbulundu.Name = "lblotelbulundu";
             this.lblotelbulundu.Size = new System.Drawing.Size(337, 26);
             this.lblotelbulundu.TabIndex = 19;
@@ -239,7 +257,7 @@
             this.lblotelgorunecek.BackColor = System.Drawing.Color.Transparent;
             this.lblotelgorunecek.Font = new System.Drawing.Font("Microsoft YaHei", 21.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.lblotelgorunecek.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblotelgorunecek.Location = new System.Drawing.Point(206, 189);
+            this.lblotelgorunecek.Location = new System.Drawing.Point(190, 189);
             this.lblotelgorunecek.Name = "lblotelgorunecek";
             this.lblotelgorunecek.Size = new System.Drawing.Size(556, 39);
             this.lblotelgorunecek.TabIndex = 22;
@@ -284,7 +302,6 @@
             this.lblgirist.TabIndex = 27;
             this.lblgirist.Text = "Giriş Tarihi";
             this.lblgirist.Visible = false;
-           
             // 
             // lblcikis
             // 
@@ -306,7 +323,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 54);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(899, 457);
+            this.tabControl1.Size = new System.Drawing.Size(899, 446);
             this.tabControl1.TabIndex = 28;
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.TabControl1_SelectedIndexChanged);
             // 
@@ -334,7 +351,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(891, 431);
+            this.tabPage1.Size = new System.Drawing.Size(891, 420);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Rezervasyon Yap";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -364,10 +381,15 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.button2);
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.label1);
+            this.tabPage2.Controls.Add(this.listBox1);
+            this.tabPage2.Controls.Add(this.checkedListBox2);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(891, 431);
+            this.tabPage2.Size = new System.Drawing.Size(891, 420);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Rezervasyonlarım";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -375,13 +397,186 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.btnguncelle);
+            this.tabPage3.Controls.Add(this.txtsoyad);
+            this.tabPage3.Controls.Add(this.txttel);
+            this.tabPage3.Controls.Add(this.txtkadı);
+            this.tabPage3.Controls.Add(this.txtparola);
+            this.tabPage3.Controls.Add(this.txtad);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Controls.Add(this.label9);
+            this.tabPage3.Controls.Add(this.label8);
+            this.tabPage3.Controls.Add(this.label7);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(891, 431);
+            this.tabPage3.Size = new System.Drawing.Size(891, 420);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Hesap Ayarlarım";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // checkedListBox2
+            // 
+            this.checkedListBox2.FormattingEnabled = true;
+            this.checkedListBox2.Location = new System.Drawing.Point(452, 123);
+            this.checkedListBox2.Name = "checkedListBox2";
+            this.checkedListBox2.Size = new System.Drawing.Size(375, 124);
+            this.checkedListBox2.TabIndex = 1;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(49, 123);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(355, 134);
+            this.listBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.Location = new System.Drawing.Point(111, 79);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(228, 24);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Geçmiş Rezervasyonlarım";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(537, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(225, 24);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Güncel Rezervasyonlarım";
+            this.label4.Click += new System.EventHandler(this.Label4_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(580, 264);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(163, 49);
+            this.button2.TabIndex = 5;
+            this.button2.Text = "Seçili Rezervasyonu İptal Et";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(280, 227);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 13);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Kullanıcı adı ";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(280, 156);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "İsim";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(280, 192);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Soyisim";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.Location = new System.Drawing.Point(323, 84);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(209, 31);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Kullanıcı Bilgileri";
+            this.label8.Click += new System.EventHandler(this.Label8_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(280, 258);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(37, 13);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Parola";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(280, 290);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(90, 13);
+            this.label10.TabIndex = 6;
+            this.label10.Text = "Telefon Numarası";
+            // 
+            // txtsoyad
+            // 
+            this.txtsoyad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtsoyad.Location = new System.Drawing.Point(468, 183);
+            this.txtsoyad.Name = "txtsoyad";
+            this.txtsoyad.Size = new System.Drawing.Size(110, 22);
+            this.txtsoyad.TabIndex = 11;
+            this.txtsoyad.Text = "Yeni Soyad";
+            this.txtsoyad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txttel
+            // 
+            this.txttel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txttel.Location = new System.Drawing.Point(468, 281);
+            this.txttel.Name = "txttel";
+            this.txttel.Size = new System.Drawing.Size(153, 22);
+            this.txttel.TabIndex = 12;
+            this.txttel.Text = "Yeni Telefon Numarası";
+            this.txttel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtkadı
+            // 
+            this.txtkadı.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtkadı.Location = new System.Drawing.Point(468, 218);
+            this.txtkadı.Name = "txtkadı";
+            this.txtkadı.Size = new System.Drawing.Size(110, 22);
+            this.txtkadı.TabIndex = 13;
+            this.txtkadı.Text = "Yeni Kullanıcı Adı";
+            this.txtkadı.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtparola
+            // 
+            this.txtparola.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtparola.Location = new System.Drawing.Point(468, 249);
+            this.txtparola.Name = "txtparola";
+            this.txtparola.Size = new System.Drawing.Size(110, 22);
+            this.txtparola.TabIndex = 14;
+            this.txtparola.Text = "Yeni Parola";
+            this.txtparola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtad
+            // 
+            this.txtad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txtad.Location = new System.Drawing.Point(468, 147);
+            this.txtad.Name = "txtad";
+            this.txtad.Size = new System.Drawing.Size(110, 22);
+            this.txtad.TabIndex = 15;
+            this.txtad.Text = "Yeni AD";
+            this.txtad.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnguncelle
+            // 
+            this.btnguncelle.Location = new System.Drawing.Point(383, 346);
+            this.btnguncelle.Name = "btnguncelle";
+            this.btnguncelle.Size = new System.Drawing.Size(111, 44);
+            this.btnguncelle.TabIndex = 16;
+            this.btnguncelle.Text = "Güncelle";
+            this.btnguncelle.UseVisualStyleBackColor = true;
             // 
             // frmkullanici
             // 
@@ -401,6 +596,10 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -434,5 +633,22 @@
         private System.Windows.Forms.Label lblgirst;
         private System.Windows.Forms.Button btnrezervasyon;
         private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnguncelle;
+        private System.Windows.Forms.TextBox txtsoyad;
+        private System.Windows.Forms.TextBox txttel;
+        private System.Windows.Forms.TextBox txtkadı;
+        private System.Windows.Forms.TextBox txtparola;
+        private System.Windows.Forms.TextBox txtad;
     }
 }

@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="admin.cs" />
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="ButikOtel.cs" />
     <Compile Include="factories\butfactory.cs" />
     <Compile Include="factories\koyfactory.cs" />
@@ -75,6 +81,9 @@
     <Compile Include="Reservation.cs" />
     <Compile Include="SystemControl.cs" />
     <Compile Include="TatilKoyu.cs" />
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Giris Ekrani.resx">
       <DependentUpon>Giris Ekrani.cs</DependentUpon>
     </EmbeddedResource>

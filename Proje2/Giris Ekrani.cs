@@ -38,7 +38,7 @@ namespace Proje2
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
         {
-
+            Console.WriteLine("dfsdf");
         }
 
         private void TextBox6_KeyPress(object sender, KeyPressEventArgs e)
@@ -94,13 +94,13 @@ namespace Proje2
 
         private void Txtyas_Click(object sender, EventArgs e)
         {
-            if (txtyas.Text == "Yaşınız") txtyas.Text = ""; //placeholder clear
+            if (txtkadı.Text == "Yaşınız") txtkadı.Text = ""; //placeholder clear
         }
 
         private void Btnuyelik_Click(object sender, EventArgs e)
         {
             //hata yakalama
-            if (txtad.Text == "" || txtparola.Text == "" || txtyas.Text == "" || txttel.Text == ""|| txtad.Text == "Adınız" || txtparola.Text == "Parolanız" || txtyas.Text == "Yaşınız" || txttel.Text == "Telefon Numaranız" || txtsoyad.Text==""|| txtsoyad.Text == "Soyadınız") MessageBox.Show("Lütfen tüm alanları eksiksiz doldurun"); 
+            if (txtad.Text == "" || txtparola.Text == "" || txtkadı.Text == "" || txttel.Text == ""|| txtad.Text == "Adınız" || txtparola.Text == "Parolanız" || txtkadı.Text == "Yaşınız" || txttel.Text == "Telefon Numaranız" || txtsoyad.Text==""|| txtsoyad.Text == "Soyadınız") MessageBox.Show("Lütfen tüm alanları eksiksiz doldurun"); 
             else
             {
                 //kayıt oluşturma işlemleri
@@ -126,6 +126,18 @@ namespace Proje2
         private void Button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+        frmadmin fr3;
+        private void Button3_Click(object sender, EventArgs e)
+        {
+
+            if (fr3 == null)
+            {
+                fr3 = new frmadmin();
+                fr3.Show();
+                this.Hide();
+            }
+
         }
     }
 }
