@@ -10,23 +10,30 @@ using System.Windows.Forms;
 
 namespace Proje2
 {
-    public partial class Form1 : Form
+    public partial class frmgiris : Form
     {
-        public Form1()
+       
+
+    public frmgiris()
         {
             InitializeComponent();
+            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        public void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void Button1_Click(object sender, EventArgs e)
+        frmkullanici fr1;
+        public void Button1_Click(object sender, EventArgs e) //giris butonu datada sorgu yapılarak girişe izin verilecek
         {
-            Form ChildForm = new Form();
-            ChildForm.Show();
-            ChildForm.MdiParent = this;
+            if (fr1 == null)
+            {
+                fr1 = new frmkullanici();
+                fr1.Show();
+                this.Hide();
+            }
+
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
@@ -104,6 +111,11 @@ namespace Proje2
         {
             if (txtparola.Text == "Parolanız") txtparola.Text = ""; //placeholder clear
             if (txtparola.Text != "Parolanız") txtparola.PasswordChar = '*'; //parola gizleme
+        }
+
+        private void Label7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
