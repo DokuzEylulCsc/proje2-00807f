@@ -8,9 +8,9 @@ namespace Proje2
 {
     class admin : Kullanici
     {
-        void CreateOtel()
+        void CreateOtel(otel otel)
         {
-
+            SystemControl.Otellist.Add(otel);
         }
 
         void DelUser()

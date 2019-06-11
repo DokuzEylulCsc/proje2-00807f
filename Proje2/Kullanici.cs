@@ -6,11 +6,14 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    abstract class Kullanici
+     abstract class Kullanici
     {
         String username;
-        String Pass_hash;
+        String pass_hash;
         String id;
 
+        public string Username { get => username; set => username = value; }
+        public string Pass_hash { get => pass_hash; set => pass_hash = value; }
+        public string Id { get => id; set => id = value; }
     }
 }

@@ -8,11 +8,36 @@ namespace Proje2
 {
     class SystemControl
     {
-        List<Kullanici> userlist;
-        List<otel> otellist;
+        static List<Kullanici> userlist = new List<Kullanici>();
+        static List<otel> otellist = new List<otel>();
 
-        internal List<Kullanici> Userlist { get => userlist; set => userlist = value; }
-        internal List<otel> Otellist { get => otellist; set => otellist = value; }
+        static public List<otel> Otellist { get => otellist; set => otellist = value; }
+        static public List<Kullanici> Userlist { get => userlist; set => userlist = value; }
+        
+
+        static public List<admin> getadminlist()
+        {
+            List<admin> templist = new List<admin>();
+            foreach (admin i in userlist)
+            {
+                templist.Add(i);
+            }
+            return templist;
+        }
+
+        static public List<musteri> getcustlist()
+        {
+            List<musteri> templist = new List<musteri>();
+            foreach (musteri i in userlist)
+            {
+                templist.Add(i);
+            }
+            return templist;
+        }
+
+
+
+
 
     }
 }

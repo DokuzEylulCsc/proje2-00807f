@@ -8,11 +8,12 @@ namespace Proje2
 {
     class ButikOtel : otel
     {
-         string type = "ButikOtel";
+       
+        String type = "ButikOtel";
 
         public ButikOtel()
         {
-
+            this.type = "testc";
         }
     }
 }

@@ -13,12 +13,16 @@ namespace Proje2
         int bed_num;
         string size;
         bool seaside;
-
+        bool minibar;
+        bool ac;//klima
+        
         public int Room_no { get => room_no; set => room_no = value; }
         public bool Reserved { get => reserved; set => reserved = value; }
         public int Bed_num { get => bed_num; set => bed_num = value; }
         public string Size { get => size; set => size = value; }
         public bool Seaside { get => seaside; set => seaside = value; }
+        public bool Minibar { get => minibar; set => minibar = value; }
+        public bool Ac { get => ac; set => ac = value; }
 
         void getinfo()
         {
