@@ -15,7 +15,9 @@ namespace Proje2
         bool seaside;
         bool minibar;
         bool ac;//klima
-        
+        int price;
+
+
         public int Room_no { get => room_no; set => room_no = value; }
         public bool Reserved { get => reserved; set => reserved = value; }
         public int Bed_num { get => bed_num; set => bed_num = value; }
@@ -23,6 +25,7 @@ namespace Proje2
         public bool Seaside { get => seaside; set => seaside = value; }
         public bool Minibar { get => minibar; set => minibar = value; }
         public bool Ac { get => ac; set => ac = value; }
+        public int Price { get => price; set => price = value; }
 
         public Oda(int rno,int bno,string size, bool sea, bool bar,bool ac)
         {
