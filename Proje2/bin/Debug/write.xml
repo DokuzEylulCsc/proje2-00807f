@@ -1,19 +1,27 @@
 <Users>
   <admins>
     <Admin>
-      <username />
-      <passhash />
-      <id />
+      <username>admin</username>
+      <passhash>C7AD44CBAD762A5DA0A452F9E854FDC1E0E7A52A38015F23F3EAB1D80B931DD472634DFAC71CD34EBC35D16AB7FB8A90C81F975113D6C7538DC69DD8DE9077EC</passhash>
+      <id>0</id>
     </Admin>
   </admins>
   <customers>
     <musteri>
-      <username />
-      <passhash />
-      <id />
-      <tel />
-      <fname />
-      <lname />
+      <username>aykirimahmut42</username>
+      <passhash>6B97ED68D14EB3F1AA959CE5D49C7DC612E1EB1DAFD73B1E705847483FD6A6C809F2CEB4E8DF6FF9984C6298FF0285CACE6614BF8DAA9F0070101B6C89899E22</passhash>
+      <id>1</id>
+      <tel>12313131</tel>
+      <fname>mahmut</fname>
+      <lname>mahmutoglu</lname>
+    </musteri>
+    <musteri>
+      <username>CcCg£zgInBoyCcC</username>
+      <passhash>B109F3BBBC244EB82441917ED06D618B9008DD09B3BEFD1B5E07394C706A8BB980B1D7785E5976EC049B46DF5F1326AF5A2EA6D103FD07C95385FFAB0CACBC86</passhash>
+      <id>2</id>
+      <tel>31312312</tel>
+      <fname>Ahmet</fname>
+      <lname>patatesson</lname>
     </musteri>
   </customers>
 </Users>
@@ -31,6 +39,7 @@
         <Size>medium</Size>
         <seaside>false</seaside>
         <minibar>true</minibar>
+        <price>0</price>
         <AC>false</AC>
       </oda>
       <oda>
@@ -40,6 +49,7 @@
         <Size>medium</Size>
         <seaside>false</seaside>
         <minibar>true</minibar>
+        <price>0</price>
         <AC>false</AC>
       </oda>
     </rooms>
@@ -58,6 +68,7 @@
         <Size>medium</Size>
         <seaside>false</seaside>
         <minibar>false</minibar>
+        <price>0</price>
         <AC>true</AC>
       </oda>
       <oda>
@@ -67,6 +78,7 @@
         <Size>medium</Size>
         <seaside>false</seaside>
         <minibar>false</minibar>
+        <price>0</price>
         <AC>true</AC>
       </oda>
     </rooms>
@@ -85,6 +97,7 @@
         <Size>medium</Size>
         <seaside>true</seaside>
         <minibar>false</minibar>
+        <price>0</price>
         <AC>false</AC>
       </oda>
       <oda>
@@ -94,6 +107,7 @@
         <Size>medium</Size>
         <seaside>true</seaside>
         <minibar>false</minibar>
+        <price>0</price>
         <AC>false</AC>
       </oda>
     </rooms>

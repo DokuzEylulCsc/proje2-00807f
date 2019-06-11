@@ -22,8 +22,9 @@ namespace Proje2
             SystemControl.Otellist.Add(pfac.GetOtel("izmir", "testotel", 2));
             SystemControl.Otellist.Add(bfac.GetOtel("sivas", "patates", 1));
             SystemControl.Otellist.Add(kfac.GetOtel("ankara", "testkoy", 4));
-            SystemControl.Userlist.Add(new admin());
-            SystemControl.Userlist.Add(new musteri());
+            SystemControl.Userlist.Add(new admin("admin","admin"));
+            SystemControl.Userlist.Add(new musteri("aykirimahmut42","12313131","mahmut","mahmutoglu","hunter2"));
+            SystemControl.Userlist.Add(new musteri("CcCg£zgInBoyCcC", "31312312", "Ahmet", "patatesson", "password"));
             FileOp.filewrite();
 
             Application.EnableVisualStyles();
