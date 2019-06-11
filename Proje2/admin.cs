@@ -32,15 +32,30 @@ namespace Proje2
 
 
 
-        void CreateOtel(String type, String sehir, string isim, int star)
+        public void CreateOtel(pansfactory factory, String sehir, string isim, int star)
         {
-
-           // SystemControl.Otellist.Add(otel);
+            SystemControl.Otellist.Add(factory.GetOtel(sehir, isim, star));
         }
 
-        void DelUser(int id)
+        public void CreateOtel(butfactory factory, String sehir, string isim, int star)
         {
-            
+            SystemControl.Otellist.Add(factory.GetOtel(sehir, isim, star));
+        }
+
+        public void CreateOtel(koyfactory factory, String sehir, string isim, int star)
+        {
+            SystemControl.Otellist.Add(factory.GetOtel(sehir, isim, star));
+        }
+
+
+        public void DelUser(string username)
+        {
+            if (SystemControl.Userlist.Find(x => x.Username == username) != null)
+            {
+                Kullanici founduser = SystemControl.Userlist.Find(x => x.Username == username);
+                SystemControl.Userlist.Remove(founduser);
+            }
+
         }
 
         void AddRoom(otel otelname, int rno, int bno, string size, bool sea, bool bar, bool ac)

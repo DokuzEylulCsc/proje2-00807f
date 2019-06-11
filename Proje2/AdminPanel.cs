@@ -12,6 +12,7 @@ namespace Proje2
     {
         public frmadmin()
         {
+            
             InitializeComponent();
         }
 
@@ -22,6 +23,7 @@ namespace Proje2
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            FileOp.filewrite();
             Application.Exit();
         }
 
@@ -30,20 +32,41 @@ namespace Proje2
 
         }
 
-        private void Label8_Click(object sender, EventArgs e)
-        {
-
-        }
-
+   
         private void Txttel_Click(object sender, EventArgs e)
         {
 
             if (txttel.Text == "Fiyat") txttel.Text = ""; //placeholder clear
         }
 
-        private void Label3_Click(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            if (koy.Checked)
+            {
+                koyfactory factory = new koyfactory();
+                SystemControl.currentadmin.CreateOtel(factory, Otsehir.Text, Otad.Text, Convert.ToInt32(Otyildiz.Text));                
 
+            }
+            else if(Butik.Checked)
+            {
+                butfactory factory = new butfactory();
+                SystemControl.currentadmin.CreateOtel(factory, Otsehir.Text, Otad.Text, Convert.ToInt32(Otyildiz.Text));
+            }
+            else if(pansiyon.Checked)
+            {
+                pansfactory factory = new pansfactory();
+                SystemControl.currentadmin.CreateOtel(factory, Otsehir.Text, Otad.Text, Convert.ToInt32(Otyildiz.Text));
+            }
+            else
+            {
+                //no check error
+            }
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SystemControl.currentadmin.DelUser(textBox4.Text);
         }
     }
 }

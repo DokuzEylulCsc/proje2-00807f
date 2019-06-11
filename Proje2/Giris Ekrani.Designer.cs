@@ -219,7 +219,6 @@
             this.txtparola.TabIndex = 7;
             this.txtparola.Text = "Parolanız";
             this.txtparola.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtparola.UseSystemPasswordChar = true;
             this.txtparola.Click += new System.EventHandler(this.Txtparola_Click);
             this.txtparola.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 

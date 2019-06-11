@@ -29,19 +29,21 @@ namespace Proje2
         public void Button1_Click(object sender, EventArgs e) //giris butonu datada sorgu yapılarak girişe izin verilecek
         {
 
-            if (SystemControl.Userlist.Find(x => x.Username == textBox2.Text) != null)
+            if (SystemControl.Userlist.Find(x => x.Username == textBox2.Text) != null)//username ile kullanıcıyı ara
             {
                 Kullanici founduser = SystemControl.Userlist.Find(x => x.Username == textBox2.Text);
 
                 using (SHA512 shaM = new SHA512Managed())
                 {
-                    if(BitConverter.ToString(shaM.ComputeHash(Encoding.UTF8.GetBytes(textBox1.Text))).Replace("-", "") == founduser.Pass_hash)
+                    if(BitConverter.ToString(shaM.ComputeHash(Encoding.UTF8.GetBytes(textBox1.Text))).Replace("-", "") == founduser.Pass_hash)//parolanin hashini al ve uyup uymadıgini kontrol et
                     {
                         Console.WriteLine(founduser.GetType().ToString());
                         if(founduser.GetType().ToString() == "Proje2.admin")
                         {
                             if (fr3 == null)
                             {
+                                SystemControl.currentadmin = SystemControl.getadminlist().Find(x => x.Id == founduser.Id);
+                               
                                 fr3 = new frmadmin();
                                 fr3.Show();
                                 this.Hide();
@@ -79,10 +81,7 @@ namespace Proje2
 
         private void TextBox6_KeyPress(object sender, KeyPressEventArgs e)
         {
-            e.Handled = !char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar);
-
-            // Sayı harici kabul etme https://stackoverflow.com/questions/463299/how-do-i-make-a-textbox-that-only-accepts-numbers
-
+           
         }
 
 
@@ -126,7 +125,7 @@ namespace Proje2
 
         private void Txtyas_Click(object sender, EventArgs e)
         {
-            if (txtkadı.Text == "Yaşınız") txtkadı.Text = ""; //placeholder clear
+            if (txtkadı.Text == "Kullanıcı Adı") txtkadı.Text = ""; //placeholder clear
         }
 
         private void Btnuyelik_Click(object sender, EventArgs e)
@@ -135,7 +134,7 @@ namespace Proje2
             if (txtad.Text == "" || txtparola.Text == "" || txtkadı.Text == "" || txttel.Text == ""|| txtad.Text == "Adınız" || txtparola.Text == "Parolanız" || txtkadı.Text == "Kullanıcı Adı" || txttel.Text == "Telefon Numaranız" || txtsoyad.Text==""|| txtsoyad.Text == "Soyadınız") MessageBox.Show("Lütfen tüm alanları eksiksiz doldurun"); 
             else
             {
-                if (SystemControl.Userlist.Find(x => x.Username == txtkadı.Text) != null)
+                if (SystemControl.Userlist.Find(x => x.Username == txtkadı.Text) == null)
                 {
                     SystemControl.Userlist.Add(new musteri(txtkadı.Text, txttel.Text, txtkadı.Text, txtsoyad.Text, txtparola.Text));
                 }
@@ -152,7 +151,7 @@ namespace Proje2
         private void Txtparola_Click(object sender, EventArgs e)
         {
             if (txtparola.Text == "Parolanız") txtparola.Text = ""; //placeholder clear
-            //if (txtparola.Text != "Parolanız") txtparola.PasswordChar = '*'; //parola gizleme
+            if (txtparola.Text != "Parolanız") txtparola.PasswordChar = '*'; //parola gizleme
         }
 
 
