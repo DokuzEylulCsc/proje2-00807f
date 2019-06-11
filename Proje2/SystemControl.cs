@@ -15,5 +15,29 @@ namespace Proje2
         static public List<Kullanici> Userlist { get => userlist; set => userlist = value; }
         
 
+        static public List<admin> getadminlist()
+        {
+            List<admin> templist = new List<admin>();
+            foreach (admin i in userlist)
+            {
+                templist.Add(i);
+            }
+            return templist;
+        }
+
+        static public List<musteri> getcustlist()
+        {
+            List<musteri> templist = new List<musteri>();
+            foreach (musteri i in userlist)
+            {
+                templist.Add(i);
+            }
+            return templist;
+        }
+
+
+
+
+
     }
 }

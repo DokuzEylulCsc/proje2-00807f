@@ -6,18 +6,20 @@ using System.Threading.Tasks;
 
 namespace Proje2
 {
-    class otel
+    abstract class otel
     {
         List<Oda> odalist;
         List<Reservation> reservelist;
         int star;
         String city;
+        string type;
+        string otelname;
 
         public List<Reservation> Reservelist { get => reservelist; set => reservelist = value; }
         public List<Oda> Odalist { get => odalist; set => odalist = value; }
-
-
-
-
+        public string Type { get => type; set => type = value; }
+        public string City { get => city; set => city = value; }
+        public int Star { get => star; set => star = value; }
+        public string Otelname { get => otelname; set => otelname = value; }
     }
 }
