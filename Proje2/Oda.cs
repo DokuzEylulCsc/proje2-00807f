@@ -27,7 +27,7 @@ namespace Proje2
         public bool Ac { get => ac; set => ac = value; }
         public int Price { get => price; set => price = value; }
 
-        public Oda(int rno,int bno,string size, bool sea, bool bar,bool ac)
+        public Oda(int rno,int bno,string size, bool sea, bool bar,int price ,bool ac)
         {
             //this.reserved = false;
             this.room_no = rno;
@@ -35,6 +35,7 @@ namespace Proje2
             this.size = size;
             this.seaside = sea;
             this.minibar = bar;
+            this.price = price;
             this.ac = ac;
         }
 
