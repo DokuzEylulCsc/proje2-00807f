@@ -14,12 +14,7 @@ namespace Proje2
         {
 
             InitializeComponent();
-            foreach (otel i in SystemControl.Otellist)
-            {
-
-                listBox1.Items.Add(i.Otelname);//acilista otel listesi hazirla
-                
-            }
+            updateinfo();
             
         }
 
@@ -68,14 +63,7 @@ namespace Proje2
             {
                 //no check error
             }
-
-            listBox1.Items.Clear();
-            foreach (otel i in SystemControl.Otellist)
-            {
-
-                listBox1.Items.Add(i.Otelname);
-
-            }
+            updateinfo();
 
 
         }
@@ -89,12 +77,44 @@ namespace Proje2
         {
             otel selected = SystemControl.Otellist.Find(x => x.Otelname == listBox1.SelectedItem);
             SystemControl.currentadmin.AddRoom(selected,selected.Odalist[selected.Odalist.Count - 1].Room_no + 1,Convert.ToInt32(cmbbxyatakcount.SelectedItem.ToString()),cmbbxodagenislik.SelectedItem.ToString(),checkBox1.Checked,checkBox3.Checked,checkBox2.Checked);
+            updateinfo();
         }
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             otel selected = SystemControl.Otellist.Find(x => x.Otelname == listBox1.SelectedItem);
-            label18.Text = selected.Type + " - " + selected.Star.ToString() + " yildiz";
+            label18.Text = selected.Type + " - " + selected.Star.ToString() + " yildiz" + " sehir: " + selected.City;
         }
-    }
+
+        void updateinfo()
+        {
+            listBox1.Items.Clear();
+            Oteller.Items.Clear();
+            int dolu = 0;
+            int bos = 0;
+            foreach (otel i in SystemControl.Otellist)
+            {
+                
+
+                listBox1.Items.Add(i.Otelname);//acilista otel listesi hazirla
+                Oteller.Items.Add(i.Otelname);
+                foreach (Oda o in i.Odalist)
+                {
+                    if (o.Reserved)
+                    {
+                        dolu++;
+                        lstbxdoluoda.Items.Add(i.Otelname + " " + o.Room_no);
+                    }
+                    else
+                    {
+                        bos++;
+                        lstbxbosoda.Items.Add(i.Otelname + " " + o.Room_no);
+                    }
+                }
+                txtbxdoluodasayisi.Text = dolu.ToString();
+                txtbxbosodasayisi.Text = bos.ToString();
+            }
+        }
+
+    }   
 }

@@ -10,6 +10,7 @@ namespace Proje2
     {
         public override otel GetOtel(String sehir, string isim , int yildiz)
         {
+            sehir = sehir.ToLower();
             ButikOtel tmpotel = new ButikOtel(sehir,isim, yildiz);//her butik otelde minimum klimali 2 medium oda olmali
             tmpotel.Odalist.Add(new Oda(101, 2, "Orta", false, false, true));
             tmpotel.Odalist.Add(new Oda(102, 2, "Orta", false, false, true));

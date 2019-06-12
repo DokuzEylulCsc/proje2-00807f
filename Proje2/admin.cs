@@ -63,10 +63,10 @@ namespace Proje2
             otelname.Odalist.Add(new Oda(rno,bno,size,sea,bar,ac));
         }
 
-        void ShowReport()
+        /*void ShowReport()
         {
 
-        }
+        }*/
 
     }
 }

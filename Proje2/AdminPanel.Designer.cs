@@ -36,7 +36,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lstbxfiyat = new System.Windows.Forms.ListBox();
+            this.lstbxbosoda = new System.Windows.Forms.ListBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtbxkalankisisayisi = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -134,7 +134,7 @@
             this.tabPage1.Controls.Add(this.label14);
             this.tabPage1.Controls.Add(this.dateTimePicker2);
             this.tabPage1.Controls.Add(this.dateTimePicker1);
-            this.tabPage1.Controls.Add(this.lstbxfiyat);
+            this.tabPage1.Controls.Add(this.lstbxbosoda);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.txtbxkalankisisayisi);
             this.tabPage1.Controls.Add(this.label7);
@@ -179,15 +179,15 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(105, 20);
             this.dateTimePicker1.TabIndex = 13;
             // 
-            // lstbxfiyat
+            // lstbxbosoda
             // 
-            this.lstbxfiyat.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lstbxfiyat.FormattingEnabled = true;
-            this.lstbxfiyat.ItemHeight = 16;
-            this.lstbxfiyat.Location = new System.Drawing.Point(568, 206);
-            this.lstbxfiyat.Name = "lstbxfiyat";
-            this.lstbxfiyat.Size = new System.Drawing.Size(173, 116);
-            this.lstbxfiyat.TabIndex = 12;
+            this.lstbxbosoda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lstbxbosoda.FormattingEnabled = true;
+            this.lstbxbosoda.ItemHeight = 16;
+            this.lstbxbosoda.Location = new System.Drawing.Point(568, 206);
+            this.lstbxbosoda.Name = "lstbxbosoda";
+            this.lstbxbosoda.Size = new System.Drawing.Size(173, 116);
+            this.lstbxbosoda.TabIndex = 12;
             // 
             // label8
             // 
@@ -195,9 +195,9 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label8.Location = new System.Drawing.Point(630, 180);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(52, 16);
+            this.label8.Size = new System.Drawing.Size(74, 16);
             this.label8.TabIndex = 11;
-            this.label8.Text = "Fiyatlar";
+            this.label8.Text = "Bos odalar";
             // 
             // txtbxkalankisisayisi
             // 
@@ -242,6 +242,7 @@
             this.txtbxbosodasayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtbxbosodasayisi.Location = new System.Drawing.Point(627, 99);
             this.txtbxbosodasayisi.Name = "txtbxbosodasayisi";
+            this.txtbxbosodasayisi.ReadOnly = true;
             this.txtbxbosodasayisi.Size = new System.Drawing.Size(114, 22);
             this.txtbxbosodasayisi.TabIndex = 6;
             // 
@@ -260,6 +261,7 @@
             this.txtbxdoluodasayisi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txtbxdoluodasayisi.Location = new System.Drawing.Point(627, 60);
             this.txtbxdoluodasayisi.Name = "txtbxdoluodasayisi";
+            this.txtbxdoluodasayisi.ReadOnly = true;
             this.txtbxdoluodasayisi.Size = new System.Drawing.Size(114, 22);
             this.txtbxdoluodasayisi.TabIndex = 4;
             // 
@@ -296,8 +298,6 @@
             // Oteller
             // 
             this.Oteller.FormattingEnabled = true;
-            this.Oteller.Items.AddRange(new object[] {
-            "mokoko"});
             this.Oteller.Location = new System.Drawing.Point(167, 78);
             this.Oteller.Name = "Oteller";
             this.Oteller.Size = new System.Drawing.Size(187, 251);
@@ -672,7 +672,7 @@
         private System.Windows.Forms.TextBox txtbxdoluodasayisi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ListBox lstbxfiyat;
+        private System.Windows.Forms.ListBox lstbxbosoda;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtbxkalankisisayisi;
         private System.Windows.Forms.Label label7;
