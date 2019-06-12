@@ -18,17 +18,16 @@ namespace Proje2
     public frmgiris()
         {
             InitializeComponent();
-            
+           
         }
 
         public void Form1_Load(object sender, EventArgs e)
         {
-
+             
         }
         frmkullanici fr1;
         public void Button1_Click(object sender, EventArgs e) //giris butonu datada sorgu yapılarak girişe izin verilecek
         {
-
             if (SystemControl.Userlist.Find(x => x.Username == textBox2.Text) != null)//username ile kullanıcıyı ara
             {
                 Kullanici founduser = SystemControl.Userlist.Find(x => x.Username == textBox2.Text);
@@ -142,7 +141,7 @@ namespace Proje2
                 }
 
                 else
-                {
+                {  
                     //ayni username var
                 }
                     
@@ -163,6 +162,7 @@ namespace Proje2
             Application.Exit();
         }
         frmadmin fr3;
- 
+
+        public List<Exception> bisey { get; private set; }
     }
 }

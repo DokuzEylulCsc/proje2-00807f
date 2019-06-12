@@ -74,6 +74,7 @@
       <DependentUpon>Giris Ekrani.cs</DependentUpon>
     </Compile>
     <Compile Include="Kullanici.cs" />
+    <Compile Include="logging.cs" />
     <Compile Include="musteri.cs" />
     <Compile Include="Oda.cs" />
     <Compile Include="otel.cs" />
