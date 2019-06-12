@@ -41,8 +41,10 @@ namespace Proje2
                                                                                                                                                                      new XElement("price", oda.Price),
                                                                                                                                                                      new XElement("AC", oda.Ac))),
                                                                                new XElement("reservations", (from reservation in otel.Reservelist
-                                                                                                             select new XElement("reservation", new XElement("date", reservation.Date),
-                                                                                                                                                                                    new XElement("username", reservation.User.Username),
+                                                                                                             select new XElement("reservation", new XElement("startdate", reservation.Startdate),
+                                                                                                             new XElement("enddate", reservation.Enddate),
+                                                                                                             new XElement("otelname", reservation.Placename),
+                                                                                                                                                                                    new XElement("username", reservation.Username),
                                                                                                                                                                                     new XElement("reserveid", reservation.Reserveid)))))));
 
               

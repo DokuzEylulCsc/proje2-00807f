@@ -9,7 +9,7 @@ namespace Proje2
     interface IIterator
     {        
         bool HasItem();  
-        //otel NextItem();       
+        otel NextItem();       
         otel CurrentItem();
     }
 }

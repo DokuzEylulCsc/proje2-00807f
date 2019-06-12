@@ -59,8 +59,8 @@
     <Compile Include="factories\otelfactory.cs" />
     <Compile Include="factories\pansfactory.cs" />
     <Compile Include="FileOp.cs" />
-    <Compile Include="IAggregate.cs" />
-    <Compile Include="IIterator.cs" />
+    <Compile Include="iteratorstuff\IAggregate.cs" />
+    <Compile Include="iteratorstuff\IIterator.cs" />
     <Compile Include="Kullanici Ekrani.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,8 +77,8 @@
     <Compile Include="musteri.cs" />
     <Compile Include="Oda.cs" />
     <Compile Include="otel.cs" />
-    <Compile Include="OtelAggregate.cs" />
-    <Compile Include="OtelIterator.cs" />
+    <Compile Include="iteratorstuff\OtelAggregate.cs" />
+    <Compile Include="iteratorstuff\OtelIterator.cs" />
     <Compile Include="Pansiyon.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

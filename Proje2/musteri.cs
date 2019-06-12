@@ -44,15 +44,16 @@ namespace Proje2
 
         void ReserveRoom(otel otel,DateTime date,Oda oda)
         {
-            otel.Reservelist.Add(new Reservation(otel,date,oda,this));
+           // otel.Reservelist.Add(new Reservation(otel,date,oda,this));
         }
 
-        void SearchOtel()
+        List<otel> SearchOtel()
         {
-           
+
+            return new List<otel>();
         }
 
-        void ReserveDel()
+        void ReserveDel(otel otel,string reservid)
         {
 
         }

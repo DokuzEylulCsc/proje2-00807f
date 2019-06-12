@@ -8,34 +8,23 @@ namespace Proje2
 {
     class Reservation
     {
-        DateTime date;
-        otel place;
-        Oda room;
-        musteri user;
+        DateTime startdate;
+        DateTime enddate;
+
+        string placename;
+        int roomnum;
+        string username;
         string reserveid;
 
 
-        public DateTime Date { get => date; set => date = value; }
-        public otel Place { get => place; set => place = value; }
-        public Oda Room { get => room; set => room = value; }
-        public musteri User { get => user; set => user = value; }
+
         public string Reserveid { get => reserveid; set => reserveid = value; }
+        public DateTime Startdate { get => startdate; set => startdate = value; }
+        public DateTime Enddate { get => enddate; set => enddate = value; }
+        public string Placename { get => placename; set => placename = value; }
+        public int Roomnum { get => roomnum; set => roomnum = value; }
+        public string Username { get => username; set => username = value; }
 
-
-
-        Reservation(DateTime time, otel otel, Oda oda, musteri musteri)
-        {
-            this.date = time;
-            this.place = otel;
-            this.room = oda;
-            this.user = musteri;
-
-        }
-
-        public Reservation(otel otel, DateTime date, Oda oda, musteri musteri)
-        {
-            this.date = date;
-        }
 
         void ShowReserv()
         {

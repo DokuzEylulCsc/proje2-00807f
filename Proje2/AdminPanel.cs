@@ -88,6 +88,7 @@ namespace Proje2
 
         void updateinfo()
         {
+            //islemlerden sonra bilgileri yenile
             listBox1.Items.Clear();
             Oteller.Items.Clear();
             int dolu = 0;

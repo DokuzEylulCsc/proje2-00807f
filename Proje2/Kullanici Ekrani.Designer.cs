@@ -47,6 +47,10 @@
             this.lblcikis = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.btnrezervasyon = new System.Windows.Forms.Button();
             this.lblgirst = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
@@ -68,10 +72,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -135,9 +135,9 @@
             "Tatil Köyü",
             "Butik Otel",
             "Pansiyon"});
-            this.clstbxoteltur.Location = new System.Drawing.Point(285, 71);
+            this.clstbxoteltur.Location = new System.Drawing.Point(290, 76);
             this.clstbxoteltur.Name = "clstbxoteltur";
-            this.clstbxoteltur.Size = new System.Drawing.Size(105, 76);
+            this.clstbxoteltur.Size = new System.Drawing.Size(105, 57);
             this.clstbxoteltur.TabIndex = 11;
             this.clstbxoteltur.SelectedIndexChanged += new System.EventHandler(this.Clstbxoteltur_SelectedIndexChanged);
             // 
@@ -324,6 +324,51 @@
             this.tabPage1.Text = "Rezervasyon Yap";
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Küçük",
+            "Orta",
+            "Büyük",
+            "Kraliyet"});
+            this.comboBox1.Location = new System.Drawing.Point(517, 72);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.TabIndex = 32;
+            this.comboBox1.Text = "Oda Genişliği";
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(412, 116);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(60, 17);
+            this.checkBox3.TabIndex = 31;
+            this.checkBox3.Text = "Minibar";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(412, 93);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(51, 17);
+            this.checkBox2.TabIndex = 30;
+            this.checkBox2.Text = "Klima";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(412, 71);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(104, 17);
+            this.checkBox1.TabIndex = 29;
+            this.checkBox1.Text = "Deniz Manzarası";
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnrezervasyon
             // 
@@ -549,51 +594,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Kullanıcı adı ";
             // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(412, 71);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(104, 17);
-            this.checkBox1.TabIndex = 29;
-            this.checkBox1.Text = "Deniz Manzarası";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(412, 93);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(51, 17);
-            this.checkBox2.TabIndex = 30;
-            this.checkBox2.Text = "Klima";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(412, 116);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(60, 17);
-            this.checkBox3.TabIndex = 31;
-            this.checkBox3.Text = "Minibar";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Küçük",
-            "Orta",
-            "Büyük",
-            "Kraliyet"});
-            this.comboBox1.Location = new System.Drawing.Point(517, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(105, 21);
-            this.comboBox1.TabIndex = 32;
-            this.comboBox1.Text = "Oda Genişliği";
-            // 
             // frmkullanici
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -606,7 +606,7 @@
             this.IsMdiContainer = true;
             this.Name = "frmkullanici";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "<";
+            this.Text = "Müşteri Paneli";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabControl1.ResumeLayout(false);

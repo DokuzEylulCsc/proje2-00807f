@@ -28,7 +28,22 @@ namespace Proje2
             FileOp.filewrite();
             FileOp.fileread();
 
-            Application.EnableVisualStyles();
+            OtelAggregate testaggre = new OtelAggregate();
+            foreach(otel z in SystemControl.Otellist)
+            {
+                testaggre.Add(z);
+            }
+
+            IIterator testiter = testaggre.CreateIterator();
+
+            while (testiter.HasItem())
+            {
+                Console.WriteLine(testiter.CurrentItem().Otelname);
+                testiter.NextItem();
+            }
+
+
+            //Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new frmgiris());
         }
