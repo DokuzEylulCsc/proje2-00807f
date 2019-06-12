@@ -32,7 +32,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.txtsehir = new System.Windows.Forms.TextBox();
-            this.clstbxoteltur = new System.Windows.Forms.CheckedListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cmbbxyatakcount = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -47,7 +46,7 @@
             this.lblcikis = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbbxodasize = new System.Windows.Forms.ComboBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -118,28 +117,13 @@
             // txtsehir
             // 
             this.txtsehir.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txtsehir.Location = new System.Drawing.Point(141, 85);
+            this.txtsehir.Location = new System.Drawing.Point(37, 84);
             this.txtsehir.Name = "txtsehir";
             this.txtsehir.Size = new System.Drawing.Size(125, 26);
             this.txtsehir.TabIndex = 10;
             this.txtsehir.Text = "Örn. İzmir";
             this.txtsehir.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtsehir.TextChanged += new System.EventHandler(this.Txtsehir_TextChanged);
-            // 
-            // clstbxoteltur
-            // 
-            this.clstbxoteltur.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.clstbxoteltur.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.clstbxoteltur.FormattingEnabled = true;
-            this.clstbxoteltur.Items.AddRange(new object[] {
-            "Tatil Köyü",
-            "Butik Otel",
-            "Pansiyon"});
-            this.clstbxoteltur.Location = new System.Drawing.Point(290, 76);
-            this.clstbxoteltur.Name = "clstbxoteltur";
-            this.clstbxoteltur.Size = new System.Drawing.Size(105, 57);
-            this.clstbxoteltur.TabIndex = 11;
-            this.clstbxoteltur.SelectedIndexChanged += new System.EventHandler(this.Clstbxoteltur_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
@@ -154,6 +138,7 @@
             // 
             // cmbbxyatakcount
             // 
+            this.cmbbxyatakcount.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbbxyatakcount.FormattingEnabled = true;
             this.cmbbxyatakcount.Items.AddRange(new object[] {
             "1",
@@ -166,7 +151,6 @@
             this.cmbbxyatakcount.Name = "cmbbxyatakcount";
             this.cmbbxyatakcount.Size = new System.Drawing.Size(105, 21);
             this.cmbbxyatakcount.TabIndex = 14;
-            this.cmbbxyatakcount.Text = "Yatak Sayısı";
             this.cmbbxyatakcount.SelectedIndexChanged += new System.EventHandler(this.Cmbbxyatakcount_SelectedIndexChanged);
             // 
             // button4
@@ -243,20 +227,18 @@
             // 
             // datepicgiris
             // 
-            this.datepicgiris.Location = new System.Drawing.Point(599, 273);
+            this.datepicgiris.Location = new System.Drawing.Point(178, 117);
             this.datepicgiris.Name = "datepicgiris";
-            this.datepicgiris.Size = new System.Drawing.Size(152, 20);
+            this.datepicgiris.Size = new System.Drawing.Size(107, 20);
             this.datepicgiris.TabIndex = 25;
-            this.datepicgiris.Visible = false;
             this.datepicgiris.ValueChanged += new System.EventHandler(this.Datepicgiris_ValueChanged);
             // 
             // datepickcikis
             // 
-            this.datepickcikis.Location = new System.Drawing.Point(599, 338);
+            this.datepickcikis.Location = new System.Drawing.Point(299, 117);
             this.datepickcikis.Name = "datepickcikis";
-            this.datepickcikis.Size = new System.Drawing.Size(152, 20);
+            this.datepickcikis.Size = new System.Drawing.Size(107, 20);
             this.datepickcikis.TabIndex = 26;
-            this.datepickcikis.Visible = false;
             this.datepickcikis.ValueChanged += new System.EventHandler(this.Datepickcikis_ValueChanged);
             // 
             // lblgirist
@@ -274,12 +256,11 @@
             // 
             this.lblcikis.AutoSize = true;
             this.lblcikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblcikis.Location = new System.Drawing.Point(636, 319);
+            this.lblcikis.Location = new System.Drawing.Point(319, 84);
             this.lblcikis.Name = "lblcikis";
             this.lblcikis.Size = new System.Drawing.Size(74, 16);
             this.lblcikis.TabIndex = 27;
             this.lblcikis.Text = "Çıkış Tarihi";
-            this.lblcikis.Visible = false;
             this.lblcikis.Click += new System.EventHandler(this.Lblcikis_Click);
             // 
             // tabControl1
@@ -296,7 +277,7 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.cmbbxodasize);
             this.tabPage1.Controls.Add(this.checkBox3);
             this.tabPage1.Controls.Add(this.checkBox2);
             this.tabPage1.Controls.Add(this.checkBox1);
@@ -309,7 +290,6 @@
             this.tabPage1.Controls.Add(this.lblgirist);
             this.tabPage1.Controls.Add(this.txtsehir);
             this.tabPage1.Controls.Add(this.datepickcikis);
-            this.tabPage1.Controls.Add(this.clstbxoteltur);
             this.tabPage1.Controls.Add(this.datepicgiris);
             this.tabPage1.Controls.Add(this.btnrez);
             this.tabPage1.Controls.Add(this.lblotelgorunecek);
@@ -325,19 +305,19 @@
             this.tabPage1.UseVisualStyleBackColor = true;
             this.tabPage1.Click += new System.EventHandler(this.TabPage1_Click);
             // 
-            // comboBox1
+            // cmbbxodasize
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbbxodasize.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbbxodasize.FormattingEnabled = true;
+            this.cmbbxodasize.Items.AddRange(new object[] {
             "Küçük",
             "Orta",
             "Büyük",
             "Kraliyet"});
-            this.comboBox1.Location = new System.Drawing.Point(517, 72);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(105, 21);
-            this.comboBox1.TabIndex = 32;
-            this.comboBox1.Text = "Oda Genişliği";
+            this.cmbbxodasize.Location = new System.Drawing.Point(517, 72);
+            this.cmbbxodasize.Name = "cmbbxodasize";
+            this.cmbbxodasize.Size = new System.Drawing.Size(105, 21);
+            this.cmbbxodasize.TabIndex = 32;
             // 
             // checkBox3
             // 
@@ -372,7 +352,7 @@
             // 
             // btnrezervasyon
             // 
-            this.btnrezervasyon.Location = new System.Drawing.Point(779, 285);
+            this.btnrezervasyon.Location = new System.Drawing.Point(659, 281);
             this.btnrezervasyon.Name = "btnrezervasyon";
             this.btnrezervasyon.Size = new System.Drawing.Size(87, 50);
             this.btnrezervasyon.TabIndex = 28;
@@ -385,12 +365,11 @@
             // 
             this.lblgirst.AutoSize = true;
             this.lblgirst.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblgirst.Location = new System.Drawing.Point(630, 254);
+            this.lblgirst.Location = new System.Drawing.Point(194, 84);
             this.lblgirst.Name = "lblgirst";
             this.lblgirst.Size = new System.Drawing.Size(72, 16);
             this.lblgirst.TabIndex = 27;
             this.lblgirst.Text = "Giriş Tarihi";
-            this.lblgirst.Visible = false;
             this.lblgirst.Click += new System.EventHandler(this.Lblcikis_Click);
             // 
             // tabPage2
@@ -628,7 +607,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtsehir;
-        private System.Windows.Forms.CheckedListBox clstbxoteltur;
         private System.Windows.Forms.ComboBox cmbbxyatakcount;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblotelbulundu;
@@ -666,6 +644,6 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbbxodasize;
     }
 }

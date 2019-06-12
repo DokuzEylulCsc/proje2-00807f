@@ -60,7 +60,7 @@ namespace Proje2
 
         public void AddRoom(otel otelname, int rno, int bno, string size, bool sea, bool bar, bool ac)
         {
-            otelname.Odalist.Add(new Oda(rno,bno,size,sea,bar,ac));
+            otelname.Odalist.Add(new Oda(rno,bno,size,sea,bar,10,ac));
         }
 
         /*void ShowReport()

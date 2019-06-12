@@ -12,8 +12,8 @@ namespace Proje2
         {
             sehir = sehir.ToLower();
             ButikOtel tmpotel = new ButikOtel(sehir,isim, yildiz);//her butik otelde minimum klimali 2 medium oda olmali
-            tmpotel.Odalist.Add(new Oda(101, 2, "Orta", false, false, true));
-            tmpotel.Odalist.Add(new Oda(102, 2, "Orta", false, false, true));
+            tmpotel.Odalist.Add(new Oda(101, 2, "Orta", false, false,20 ,true));
+            tmpotel.Odalist.Add(new Oda(102, 2, "Orta", false, false, 20, true));
 
             return tmpotel;
         }

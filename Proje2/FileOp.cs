@@ -33,7 +33,7 @@ namespace Proje2
                                                                                new XElement("name", otel.Otelname),
                                                                                new XElement("rooms", from oda in otel.Odalist
                                                                                                      select new XElement("oda", new XElement("roomno", oda.Room_no),
-                                                                                                                                                                     new XElement("Reserved", oda.Reserved),
+                                                                                                                                                                     /*new XElement("Reserved", oda.Reserved),*/
                                                                                                                                                                      new XElement("Bednum", oda.Bed_num),
                                                                                                                                                                      new XElement("Size", oda.Size),
                                                                                                                                                                      new XElement("seaside", oda.Seaside),
@@ -63,13 +63,67 @@ namespace Proje2
 
         static public void fileread()
         {
-            string xml = File.ReadAllText("write.xml");
-            XDocument doc = XDocument.Parse(xml);
-
-            Console.WriteLine(doc.Element("data").Element("Users").Element("admins"));
 
 
-    
+
+            XmlDocument xmldoc = new XmlDocument();
+            xmldoc.Load("write.xml");
+
+            foreach (XmlNode node in xmldoc.DocumentElement.ChildNodes[0].ChildNodes[0].ChildNodes)//adminleri al
+            {
+                admin placeholder = new admin(node.ChildNodes[0].InnerText, node.ChildNodes[1].InnerText);
+                placeholder.Pass_hash = node.ChildNodes[1].InnerText;
+                SystemControl.Userlist.Add(placeholder);
+                Console.WriteLine(node.ChildNodes[0].InnerText);
+            }
+
+            foreach (XmlNode node in xmldoc.DocumentElement.ChildNodes[0].ChildNodes[1].ChildNodes)//musterileri al
+            {
+                musteri placeholder = new musteri(node.ChildNodes[0].InnerText, node.ChildNodes[3].InnerText, node.ChildNodes[4].InnerText, node.ChildNodes[5].InnerText, node.ChildNodes[1].InnerText);
+                placeholder.Pass_hash = node.ChildNodes[1].InnerText;
+                SystemControl.Userlist.Add(placeholder);//node.ChildNodes[0].InnerText, node.ChildNodes[1].InnerText));
+               
+            }
+
+            foreach (XmlNode node in xmldoc.DocumentElement.ChildNodes[1].ChildNodes)
+            {
+                switch (node.ChildNodes[0].InnerText)
+                {
+                    case "Pansiyon":
+                        Pansiyon placeholderP = new Pansiyon(node.ChildNodes[2].InnerText, node.ChildNodes[3].InnerText,Convert.ToInt32(node.ChildNodes[1].InnerText));
+                        foreach(XmlNode roomnode in node.ChildNodes[4].ChildNodes)
+                        {
+                            placeholderP.Odalist.Add(new Oda(Convert.ToInt32(roomnode.ChildNodes[0].InnerText), Convert.ToInt32(roomnode.ChildNodes[1].InnerText), roomnode.ChildNodes[2].InnerText,bool.Parse(roomnode.ChildNodes[3].InnerText), bool.Parse(roomnode.ChildNodes[4].InnerText),Convert.ToInt32(roomnode.ChildNodes[5].InnerText),bool.Parse(roomnode.ChildNodes[6].InnerText)));
+                           // Console.WriteLine(roomnode.ChildNodes[0].InnerText);
+                        }                    
+                        SystemControl.Otellist.Add(placeholderP);
+                        break;
+                    case "TatilKoyu":
+                        TatilKoyu placeholderT = new TatilKoyu(node.ChildNodes[2].InnerText, node.ChildNodes[3].InnerText, Convert.ToInt32(node.ChildNodes[1].InnerText));
+                        foreach (XmlNode roomnode in node.ChildNodes[4].ChildNodes)
+                        {
+                            placeholderT.Odalist.Add(new Oda(Convert.ToInt32(roomnode.ChildNodes[0].InnerText), Convert.ToInt32(roomnode.ChildNodes[1].InnerText), roomnode.ChildNodes[2].InnerText, bool.Parse(roomnode.ChildNodes[3].InnerText), bool.Parse(roomnode.ChildNodes[4].InnerText), Convert.ToInt32(roomnode.ChildNodes[5].InnerText), bool.Parse(roomnode.ChildNodes[6].InnerText)));
+                            // Console.WriteLine(roomnode.ChildNodes[0].InnerText);
+                        }
+                        SystemControl.Otellist.Add(placeholderT);
+                        break;
+                    case "ButikOtel":
+                        ButikOtel placeholderB = new ButikOtel(node.ChildNodes[2].InnerText, node.ChildNodes[3].InnerText, Convert.ToInt32(node.ChildNodes[1].InnerText));
+                        foreach (XmlNode roomnode in node.ChildNodes[4].ChildNodes)
+                        {
+                            placeholderB.Odalist.Add(new Oda(Convert.ToInt32(roomnode.ChildNodes[0].InnerText), Convert.ToInt32(roomnode.ChildNodes[1].InnerText), roomnode.ChildNodes[2].InnerText, bool.Parse(roomnode.ChildNodes[3].InnerText), bool.Parse(roomnode.ChildNodes[4].InnerText), Convert.ToInt32(roomnode.ChildNodes[5].InnerText), bool.Parse(roomnode.ChildNodes[6].InnerText)));
+                            // Console.WriteLine(roomnode.ChildNodes[0].InnerText);
+                        }
+                        SystemControl.Otellist.Add(placeholderB);
+                        break;
+                    default:
+                        break;
+                }
+
+                /*SystemControl.Otellist.Add(ButikOtel )
+                Console.WriteLine(node.ChildNodes[0].InnerText);*/
+            }
+
         }
 
     }

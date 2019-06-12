@@ -15,7 +15,7 @@ namespace Proje2
         static void Main()
         {
             ///test boyz 
-            pansfactory pfac = new pansfactory();
+            /*pansfactory pfac = new pansfactory();
             butfactory bfac = new butfactory();
             koyfactory kfac = new koyfactory();
             
@@ -24,8 +24,8 @@ namespace Proje2
             SystemControl.Otellist.Add(kfac.GetOtel("ankara", "testkoy", 4));
             SystemControl.Userlist.Add(new admin("admin","admin"));
             SystemControl.Userlist.Add(new musteri("aykirimahmut42","12313131","mahmut","mahmutoglu","hunter2"));
-            SystemControl.Userlist.Add(new musteri("CcCg£zgInBoyCcC", "31312312", "Ahmet", "patatesson", "password"));
-            FileOp.filewrite();
+            SystemControl.Userlist.Add(new musteri("CcCg£zgInBoyCcC", "31312312", "Ahmet", "patatesson", "password"));*/
+           // FileOp.filewrite();
             FileOp.fileread();
 
             OtelAggregate testaggre = new OtelAggregate();

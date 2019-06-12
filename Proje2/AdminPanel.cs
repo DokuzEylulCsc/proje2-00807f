@@ -101,7 +101,7 @@ namespace Proje2
                 Oteller.Items.Add(i.Otelname);
                 foreach (Oda o in i.Odalist)
                 {
-                    if (o.Reserved)
+                    /*if (o.Reserved)
                     {
                         dolu++;
                         lstbxdoluoda.Items.Add(i.Otelname + " " + o.Room_no);
@@ -110,12 +110,16 @@ namespace Proje2
                     {
                         bos++;
                         lstbxbosoda.Items.Add(i.Otelname + " " + o.Room_no);
-                    }
+                    }*/
                 }
                 txtbxdoluodasayisi.Text = dolu.ToString();
                 txtbxbosodasayisi.Text = bos.ToString();
             }
         }
 
+        private void Otyildiz_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }   
 }

@@ -25,6 +25,15 @@ namespace Proje2
         public int Roomnum { get => roomnum; set => roomnum = value; }
         public string Username { get => username; set => username = value; }
 
+        public Reservation(string otel,DateTime start,DateTime end,int room,string user)
+        {
+            this.placename = otel;
+            this.startdate = start;
+            this.enddate = end;
+            this.roomnum = room;
+            this.username = user;
+        }
+
 
         void ShowReserv()
         {

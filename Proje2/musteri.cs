@@ -42,15 +42,66 @@ namespace Proje2
         }
 
 
-        void ReserveRoom(otel otel,DateTime date,Oda oda)
+        public void ReserveRoom(otel otel,DateTime start,DateTime end,Oda oda)
         {
-           // otel.Reservelist.Add(new Reservation(otel,date,oda,this));
+           otel.Reservelist.Add(new Reservation(otel.Otelname,start,end,oda.Room_no,this.Username));
         }
 
-        List<otel> SearchOtel()
+        public List<string> SearchOtel(DateTime start, DateTime end,int bednum,string size,bool sea,bool ac,bool bar,string city)
         {
+            List<string> tmplist = new List<string>();
 
-            return new List<otel>();
+            OtelAggregate aggre = new OtelAggregate();
+            foreach (otel z in SystemControl.Otellist)
+            {
+                aggre.Add(z);
+            }
+
+            IIterator iter = aggre.CreateIterator();
+
+            while (iter.HasItem())
+            {
+                if(iter.CurrentItem().City == city)
+                { 
+                foreach(Reservation res in iter.CurrentItem().Reservelist)
+                {
+                    if(!(start < res.Enddate && res.Startdate < end))
+                        {
+                        Oda found = iter.CurrentItem().Odalist.Find(x => x.Room_no == res.Roomnum);
+                        if(found.Bed_num == bednum || found.Size == size || found.Seaside == sea || found.Minibar == bar || found.Ac == ac)
+                            {
+                                tmplist.Add(iter.CurrentItem().Otelname + "-" + found.Room_no.ToString());
+                            }
+                        }
+                }
+                foreach(Oda rum in iter.CurrentItem().Odalist)
+                    {
+                        if (rum.Bed_num == bednum || rum.Size == size || rum.Seaside == sea || rum.Minibar == bar || rum.Ac == ac)
+                        {
+                            if(iter.CurrentItem().Reservelist.Count > 0)
+                            {
+                                foreach (Reservation res in iter.CurrentItem().Reservelist)
+                                {
+                                    if (res.Roomnum != rum.Room_no)
+                                    {
+                                            tmplist.Add(iter.CurrentItem().Otelname + "-" + rum.Room_no.ToString());
+                                    }
+                                }
+                            }
+                            tmplist.Add(iter.CurrentItem().Otelname + "-" + rum.Room_no.ToString());
+                        }
+
+
+                        
+                    }
+                }
+
+                iter.NextItem();
+            }
+
+
+
+            return tmplist;
         }
 
         void ReserveDel(otel otel,string reservid)

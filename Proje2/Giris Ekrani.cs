@@ -41,7 +41,7 @@ namespace Proje2
                         {
                             if (fr3 == null)
                             {
-                                SystemControl.currentadmin = SystemControl.getadminlist().Find(x => x.Id == founduser.Id);
+                                SystemControl.currentadmin = SystemControl.getadminlist().Find(x => x.Username == founduser.Username);
                                
                                 fr3 = new frmadmin();
                                 fr3.Show();
@@ -52,7 +52,7 @@ namespace Proje2
                         {
                             if (fr1 == null)
                             {
-                                SystemControl.currentmusteri = SystemControl.getcustlist().Find(x => x.Id == founduser.Id);
+                                SystemControl.currentmusteri = SystemControl.getcustlist().Find(x => x.Username == founduser.Username);
 
                                 fr1 = new frmkullanici();
                                 fr1.Show();
