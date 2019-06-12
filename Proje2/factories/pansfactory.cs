@@ -11,8 +11,8 @@ namespace Proje2
         public override otel GetOtel(String sehir, string isim, int star)
         {
             Pansiyon tmpotel = new Pansiyon(sehir, isim, star);//her pansiyonda minimum 2 barli medium oda olmali
-            tmpotel.Odalist.Add(new Oda(101, 2, "medium", false, true, false));
-            tmpotel.Odalist.Add(new Oda(102, 2, "medium", false, true, false));
+            tmpotel.Odalist.Add(new Oda(101, 2, "Orta", false, true, false));
+            tmpotel.Odalist.Add(new Oda(102, 2, "Orta", false, true, false));
 
             return tmpotel;
         }

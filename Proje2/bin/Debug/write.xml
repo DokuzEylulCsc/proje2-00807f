@@ -37,7 +37,7 @@
           <roomno>101</roomno>
           <Reserved>false</Reserved>
           <Bednum>2</Bednum>
-          <Size>medium</Size>
+          <Size>Orta</Size>
           <seaside>false</seaside>
           <minibar>true</minibar>
           <price>0</price>
@@ -47,7 +47,7 @@
           <roomno>102</roomno>
           <Reserved>false</Reserved>
           <Bednum>2</Bednum>
-          <Size>medium</Size>
+          <Size>Orta</Size>
           <seaside>false</seaside>
           <minibar>true</minibar>
           <price>0</price>
@@ -66,7 +66,7 @@
           <roomno>101</roomno>
           <Reserved>false</Reserved>
           <Bednum>2</Bednum>
-          <Size>medium</Size>
+          <Size>Orta</Size>
           <seaside>false</seaside>
           <minibar>false</minibar>
           <price>0</price>
@@ -76,7 +76,7 @@
           <roomno>102</roomno>
           <Reserved>false</Reserved>
           <Bednum>2</Bednum>
-          <Size>medium</Size>
+          <Size>Orta</Size>
           <seaside>false</seaside>
           <minibar>false</minibar>
           <price>0</price>
@@ -95,7 +95,7 @@
           <roomno>101</roomno>
           <Reserved>false</Reserved>
           <Bednum>2</Bednum>
-          <Size>medium</Size>
+          <Size>Orta</Size>
           <seaside>true</seaside>
           <minibar>false</minibar>
           <price>0</price>
@@ -105,7 +105,7 @@
           <roomno>102</roomno>
           <Reserved>false</Reserved>
           <Bednum>2</Bednum>
-          <Size>medium</Size>
+          <Size>Orta</Size>
           <seaside>true</seaside>
           <minibar>false</minibar>
           <price>0</price>
