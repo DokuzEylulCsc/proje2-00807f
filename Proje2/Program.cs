@@ -41,6 +41,8 @@ namespace Proje2
                 Console.WriteLine(testiter.CurrentItem().Otelname);
                 testiter.NextItem();
             }
+ 
+
 
 
             //Application.EnableVisualStyles();
