@@ -33,7 +33,7 @@ namespace Proje2
                                                                                new XElement("name", otel.Otelname),
                                                                                new XElement("rooms", from oda in otel.Odalist
                                                                                                      select new XElement("oda", new XElement("roomno", oda.Room_no),
-                                                                                                                                                                     new XElement("Reserved", oda.Reserved),
+                                                                                                                                                                     /*new XElement("Reserved", oda.Reserved),*/
                                                                                                                                                                      new XElement("Bednum", oda.Bed_num),
                                                                                                                                                                      new XElement("Size", oda.Size),
                                                                                                                                                                      new XElement("seaside", oda.Seaside),

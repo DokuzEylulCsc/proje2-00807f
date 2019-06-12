@@ -19,7 +19,7 @@ namespace Proje2
 
 
         public int Room_no { get => room_no; set => room_no = value; }
-        public bool Reserved { get => reserved; set => reserved = value; }
+        //public bool Reserved { get => reserved; set => reserved = value; }
         public int Bed_num { get => bed_num; set => bed_num = value; }
         public string Size { get => size; set => size = value; }
         public bool Seaside { get => seaside; set => seaside = value; }
@@ -29,7 +29,7 @@ namespace Proje2
 
         public Oda(int rno,int bno,string size, bool sea, bool bar,bool ac)
         {
-            this.reserved = false;
+            //this.reserved = false;
             this.room_no = rno;
             this.bed_num = bno;
             this.size = size;

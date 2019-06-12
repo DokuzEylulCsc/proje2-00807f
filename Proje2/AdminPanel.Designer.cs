@@ -440,6 +440,7 @@
             this.Otyildiz.Name = "Otyildiz";
             this.Otyildiz.Size = new System.Drawing.Size(105, 20);
             this.Otyildiz.TabIndex = 7;
+            this.Otyildiz.TextChanged += new System.EventHandler(this.Otyildiz_TextChanged);
             // 
             // Otsehir
             // 

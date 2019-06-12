@@ -41,22 +41,26 @@ namespace Proje2
 
         private void Button4_Click(object sender, EventArgs e)
         {
-          
+          foreach(string girdi  in SystemControl.currentmusteri.SearchOtel(datepicgiris.Value,datepickcikis.Value,Convert.ToInt32(cmbbxyatakcount.SelectedItem.ToString()),cmbbxodasize.SelectedItem.ToString(),checkBox1.Checked,checkBox2.Checked,checkBox3.Checked,txtsehir.Text.ToLower()))
+            {
+                chclstbxoteller.Items.Add(girdi);
+            }
+
             lblotelbulundu.Show();
             chclstbxoteller.Show();
             lbluyari.Show();
             lblotelgorunecek.Hide();
-            lblcikis.Show();
-            datepicgiris.Show();
-            datepickcikis.Show();
+            //lblcikis.Show();
+            //datepicgiris.Show();
+            //datepickcikis.Show();
             btnrezervasyon.Show();
-            lblgirst.Show();
+            //lblgirst.Show();
           
         }
 
         private void Lblotelbulundu_Click(object sender, EventArgs e)
         {
-          
+         
         }
 
         private void Lstbxoteller_SelectedIndexChanged(object sender, EventArgs e)
@@ -184,7 +188,13 @@ namespace Proje2
 
         private void btnrezervasyon_Click(object sender, EventArgs e)
         {
+            foreach(string s in chclstbxoteller.CheckedItems)
+            {
+                string[] checkList = s.Split('-');
+                SystemControl.currentmusteri.ReserveRoom(SystemControl.Otellist.Find(x => x.Otelname == checkList[0]), datepicgiris.Value, datepickcikis.Value, SystemControl.Otellist.Find(x => x.Otelname == checkList[0]).Odalist.Find(x => x.Room_no == Convert.ToInt32(checkList[1])));//reservasyon yap
 
+            }
+            
         }
 
         private void btnguncelle_Click(object sender, EventArgs e)
