@@ -28,7 +28,7 @@
   </Users>
   <otels>
     <otel>
-      <type>TatilKoyu</type>
+      <type>Pansiyon</type>
       <star>2</star>
       <city>izmir</city>
       <name>testotel</name>
@@ -52,6 +52,16 @@
           <minibar>true</minibar>
           <price>0</price>
           <AC>false</AC>
+        </oda>
+        <oda>
+          <roomno>103</roomno>
+          <Reserved>false</Reserved>
+          <Bednum>3</Bednum>
+          <Size>Büyük</Size>
+          <seaside>false</seaside>
+          <minibar>false</minibar>
+          <price>0</price>
+          <AC>true</AC>
         </oda>
       </rooms>
       <reservations />

@@ -12,8 +12,15 @@ namespace Proje2
     {
         public frmadmin()
         {
-            
+
             InitializeComponent();
+            foreach (otel i in SystemControl.Otellist)
+            {
+
+                listBox1.Items.Add(i.Otelname);//acilista otel listesi hazirla
+                
+            }
+            
         }
 
         private void AdminPanel_Load(object sender, EventArgs e)
@@ -23,7 +30,7 @@ namespace Proje2
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            FileOp.filewrite();
+            FileOp.filewrite();//cikista veriyi dosyaya yazdir
             Application.Exit();
         }
 
@@ -62,11 +69,32 @@ namespace Proje2
                 //no check error
             }
 
+            listBox1.Items.Clear();
+            foreach (otel i in SystemControl.Otellist)
+            {
+
+                listBox1.Items.Add(i.Otelname);
+
+            }
+
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             SystemControl.currentadmin.DelUser(textBox4.Text);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            otel selected = SystemControl.Otellist.Find(x => x.Otelname == listBox1.SelectedItem);
+            SystemControl.currentadmin.AddRoom(selected,selected.Odalist[selected.Odalist.Count - 1].Room_no + 1,Convert.ToInt32(cmbbxyatakcount.SelectedItem.ToString()),cmbbxodagenislik.SelectedItem.ToString(),checkBox1.Checked,checkBox3.Checked,checkBox2.Checked);
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            otel selected = SystemControl.Otellist.Find(x => x.Otelname == listBox1.SelectedItem);
+            label18.Text = selected.Type + " - " + selected.Star.ToString() + " yildiz";
         }
     }
 }
