@@ -34,10 +34,7 @@
             this.txtsehir = new System.Windows.Forms.TextBox();
             this.clstbxoteltur = new System.Windows.Forms.CheckedListBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.clsbxodatur = new System.Windows.Forms.CheckedListBox();
-            this.clbxekstralar = new System.Windows.Forms.CheckedListBox();
             this.cmbbxyatakcount = new System.Windows.Forms.ComboBox();
-            this.cmbbxodagenislik = new System.Windows.Forms.ComboBox();
             this.button4 = new System.Windows.Forms.Button();
             this.lblotelbulundu = new System.Windows.Forms.Label();
             this.chclstbxoteller = new System.Windows.Forms.CheckedListBox();
@@ -71,6 +68,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -151,30 +152,6 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.PictureBox1_Click);
             // 
-            // clsbxodatur
-            // 
-            this.clsbxodatur.FormattingEnabled = true;
-            this.clsbxodatur.Items.AddRange(new object[] {
-            "Standart Oda",
-            "Kral Dairesi"});
-            this.clsbxodatur.Location = new System.Drawing.Point(396, 116);
-            this.clsbxodatur.Name = "clsbxodatur";
-            this.clsbxodatur.Size = new System.Drawing.Size(105, 34);
-            this.clsbxodatur.TabIndex = 12;
-            this.clsbxodatur.SelectedIndexChanged += new System.EventHandler(this.Clsbxodatur_SelectedIndexChanged);
-            // 
-            // clbxekstralar
-            // 
-            this.clbxekstralar.FormattingEnabled = true;
-            this.clbxekstralar.Items.AddRange(new object[] {
-            "Deniz Manzaralı",
-            "Klimalı"});
-            this.clbxekstralar.Location = new System.Drawing.Point(396, 71);
-            this.clbxekstralar.Name = "clbxekstralar";
-            this.clbxekstralar.Size = new System.Drawing.Size(105, 34);
-            this.clbxekstralar.TabIndex = 13;
-            this.clbxekstralar.SelectedIndexChanged += new System.EventHandler(this.Clbxekstralar_SelectedIndexChanged);
-            // 
             // cmbbxyatakcount
             // 
             this.cmbbxyatakcount.FormattingEnabled = true;
@@ -191,16 +168,6 @@
             this.cmbbxyatakcount.TabIndex = 14;
             this.cmbbxyatakcount.Text = "Yatak Sayısı";
             this.cmbbxyatakcount.SelectedIndexChanged += new System.EventHandler(this.Cmbbxyatakcount_SelectedIndexChanged);
-            // 
-            // cmbbxodagenislik
-            // 
-            this.cmbbxodagenislik.FormattingEnabled = true;
-            this.cmbbxodagenislik.Location = new System.Drawing.Point(517, 71);
-            this.cmbbxodagenislik.Name = "cmbbxodagenislik";
-            this.cmbbxodagenislik.Size = new System.Drawing.Size(105, 21);
-            this.cmbbxodagenislik.TabIndex = 15;
-            this.cmbbxodagenislik.Text = "Oda Genişliği";
-            this.cmbbxodagenislik.SelectedIndexChanged += new System.EventHandler(this.Cmbbxodagenislik_SelectedIndexChanged);
             // 
             // button4
             // 
@@ -329,6 +296,10 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.checkBox3);
+            this.tabPage1.Controls.Add(this.checkBox2);
+            this.tabPage1.Controls.Add(this.checkBox1);
             this.tabPage1.Controls.Add(this.btnrezervasyon);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.lbluyari);
@@ -340,12 +311,9 @@
             this.tabPage1.Controls.Add(this.datepickcikis);
             this.tabPage1.Controls.Add(this.clstbxoteltur);
             this.tabPage1.Controls.Add(this.datepicgiris);
-            this.tabPage1.Controls.Add(this.clsbxodatur);
             this.tabPage1.Controls.Add(this.btnrez);
-            this.tabPage1.Controls.Add(this.clbxekstralar);
             this.tabPage1.Controls.Add(this.lblotelgorunecek);
             this.tabPage1.Controls.Add(this.cmbbxyatakcount);
-            this.tabPage1.Controls.Add(this.cmbbxodagenislik);
             this.tabPage1.Controls.Add(this.chclstbxoteller);
             this.tabPage1.Controls.Add(this.lblotelbulundu);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -581,6 +549,51 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "Kullanıcı adı ";
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(412, 71);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(104, 17);
+            this.checkBox1.TabIndex = 29;
+            this.checkBox1.Text = "Deniz Manzarası";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(412, 93);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(51, 17);
+            this.checkBox2.TabIndex = 30;
+            this.checkBox2.Text = "Klima";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(412, 116);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(60, 17);
+            this.checkBox3.TabIndex = 31;
+            this.checkBox3.Text = "Minibar";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Küçük",
+            "Orta",
+            "Büyük",
+            "Kraliyet"});
+            this.comboBox1.Location = new System.Drawing.Point(517, 72);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.TabIndex = 32;
+            this.comboBox1.Text = "Oda Genişliği";
+            // 
             // frmkullanici
             // 
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
@@ -616,10 +629,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtsehir;
         private System.Windows.Forms.CheckedListBox clstbxoteltur;
-        private System.Windows.Forms.CheckedListBox clsbxodatur;
-        private System.Windows.Forms.CheckedListBox clbxekstralar;
         private System.Windows.Forms.ComboBox cmbbxyatakcount;
-        private System.Windows.Forms.ComboBox cmbbxodagenislik;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label lblotelbulundu;
         private System.Windows.Forms.CheckedListBox chclstbxoteller;
@@ -653,5 +663,9 @@
         private System.Windows.Forms.TextBox txtkadı;
         private System.Windows.Forms.TextBox txtparola;
         private System.Windows.Forms.TextBox txtad;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
